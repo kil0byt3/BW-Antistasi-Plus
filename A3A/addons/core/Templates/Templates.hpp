@@ -721,4 +721,26 @@ class Templates
         file = "VN_Civ";
         description = $STR_A3AP_setupFactionsTab_vietcivs;
     };
+
+    //************* BW - GM+VN+RHS ********************************************************
+
+    class BW_Base : Base
+    {
+        requiredAddons[] = {"gm_weapons_items"};
+        logo = "\gm\gm_core\data\logos\gm_logo_ca.paa";
+        basepath = QPATHTOFOLDER(Templates\Templates\BW);
+        priority = 60;
+        equipFlags[] = {"lowTech"};
+        forceDLC[] = {"gm"};
+    };
+
+    class BW_NATO : BW_Base
+    {
+        priority = 61;
+        side = "Occ";
+        flagTexture = "\gm\gm_core\data\flags\gm_flag_ge_co";
+        name = "GM+VN+RHS NATO";
+        file = "BW_AI_NATO";
+        description = $STR_A3AP_setupFactionsTab_bw_nato;
+    };
 };

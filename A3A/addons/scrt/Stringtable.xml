@@ -386,6 +386,9 @@
                 <Chinesesimp>美国陆军。\n侵略性的，压倒性的力量。\n使用这个派别将激活冷战模式（将只使用大致符合时间线的车辆和武器。）</Chinesesimp>
                 <Korean>미 육군.\n공격적이고 압도적인 힘.\n이 팩션을 사용하면 냉전 모드가 활성화됩니다(해당 시간대와 대략 맞는 차량과 무기만 사용됩니다).</Korean>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_bw_nato">
+                <Original>A European NATO faction featuring the GM, VN and RHS assets</Original>
+            </Key>
         </Container>
         <Container name="magRepack">
             <Key ID="STR_magRepack_init">
