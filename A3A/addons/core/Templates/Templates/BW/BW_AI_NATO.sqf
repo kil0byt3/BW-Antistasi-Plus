@@ -24,7 +24,7 @@
 ["vehiclesCargoTrucks", ["gm_ge_army_kat1_452_container", "gm_ge_army_u1300l_container"]] call _fnc_saveToTemplate;
 ["vehiclesAmmoTrucks", ["gm_ge_army_kat1_451_reammo", "gm_ge_army_kat1_454_reammo"]] call _fnc_saveToTemplate;
 ["vehiclesRepairTrucks", ["gm_ge_army_u1300l_repair", "gm_dk_army_bpz2a0", "gm_ge_army_bpz2a0", "gm_ge_army_bibera0"]] call _fnc_saveToTemplate;
-["vehiclesFuelTrucks", ["gm_ge_army_kat1_451_refuel" "vn_b_wheeled_m54_fuel_aus_army"]] call _fnc_saveToTemplate;
+["vehiclesFuelTrucks", ["gm_ge_army_kat1_451_refuel", "vn_b_wheeled_m54_fuel_aus_army"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["gm_ge_army_u1300l_medic", "vn_b_armor_m577_02"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", ["gm_dk_army_m113a1dk_apc", "gm_ge_army_m113a1g_apc", "gm_ge_army_m113a1g_command", "gm_ge_army_fuchsa0_command"]] call _fnc_saveToTemplate;
 ["vehiclesAirborne", []] call _fnc_saveToTemplate;
