@@ -86,11 +86,11 @@
 #include "BW_Vehicle_Attributes.sqf"
 
 ["variants", [
-    ["I_LT_01_cannon_F", ["Indep_Olive",1]["showTools",1,"showCamonetHull",1,"showBags",0,"showSLATHull",0]],
-    ["RHS_AH64D_wd", ["standard",1]["radar_hide",1]],
+    ["I_LT_01_cannon_F", ["Indep_Olive","showTools",1,"showCamonetHull",1,"showBags",0,"showSLATHull",1]],
+    ["RHS_AH64D_wd", ["standard","radar_hide",1]],
     ["vn_b_armor_m125_01", ["m125_43",1]],
-    ["rhsusf_m1025_w_m2", ["Olive",1]["hide_snorkel",1,"hide_CIP",1,"hide_BFT",1,"hide_Antenna",1,"hide_A2_Parts",1,"Hide_A2Bumper",1,"Hide_Brushguard",1]],
-    ["rhsusf_m1025_w_mk19", ["Olive",1]["hide_snorkel",1,"hide_CIP",1,"hide_BFT",1,"hide_Antenna",1,"hide_A2_Parts",1,"Hide_A2Bumper",1,"Hide_Brushguard",1]],
+    ["rhsusf_m1025_w_m2", ["Olive","hide_snorkel",1,"hide_CIP",1,"hide_BFT",1,"hide_Antenna",1,"hide_A2_Parts",1,"Hide_A2Bumper",1,"Hide_Brushguard",1,1]],
+    ["rhsusf_m1025_w_mk19", ["Olive","hide_snorkel",1,"hide_CIP",1,"hide_BFT",1,"hide_Antenna",1,"hide_A2_Parts",1,"Hide_A2Bumper",1,"Hide_Brushguard",1,1]],
     ["vn_b_armor_m113_01", ["m113_43",1]],
     ["vn_b_armor_m132_01", ["m132_43",1]],
     ["B_Radar_System_01_F", ["Olive",1]],
