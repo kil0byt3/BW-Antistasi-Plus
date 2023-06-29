@@ -772,4 +772,12 @@ class Templates
         description = $STR_A3AP_setupFactionsTab_bw_rebels;
     };
 
+    class BW_Rivals : BW_Base
+    {
+        side = "Riv";
+        flagTexture = "\A3\Data_F_Exp\Flags\flag_SYND_CO.paa";
+        name = "GM+VN+RHS Rivals";
+        file = "BW_AI_RIVAL";
+        description = $STR_A3AP_setupFactionsTab_bw_rivals;
+    };
 };
