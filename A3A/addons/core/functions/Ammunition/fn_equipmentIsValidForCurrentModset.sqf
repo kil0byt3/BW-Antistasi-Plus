@@ -6,7 +6,7 @@ if ("specialGM" in A3A_factionEquipFlags) exitWith {
 	if (_cfgName in ["gm_g36a1_blk", "gm_g36a1_des", "gm_g36e_blk", "gm_p2a1_launcher_blk", "gm_itemAttachment_suppressor_base"]) exitWith {false};
 	if (_itemMod == "gm") exitWith {true};
 	if (_cfgName in ["DemoCharge_Remote_Mag", "ItemGPS", "ACE_ATragMX","ACE_Kestrel4500","ACE_DAGR",
-		"ACE_microDAGR","MineDetector","ACE_M26_Clacker","ACE_Clacker"] ) exitWith {true};
+		"ACE_microDAGR","MineDetector","ACE_M26_Clacker","ACE_Clacker","rhs_acc_ekp8_02","rhsusf_acc_compm4","rhs_acc_okp7_picatinny","rhsusf_acc_T1_high"] ) exitWith {true};
 	false;
 };
 

@@ -2,7 +2,7 @@
 //   Civilian Information   //
 //////////////////////////////
 
-// All of bellow are optional overrides.
+// All of below are optional overrides.
 ["firstAidKits", ["vn_o_item_firstaidkit"]] call _fnc_saveToTemplate;  // Relies on autodetection. However, item is tested for for help and reviving.
 ["mediKits", ["vn_o_item_medikit_01"]] call _fnc_saveToTemplate;  // Relies on autodetection. However, item is tested for for help and reviving.
 
@@ -58,32 +58,37 @@
     ,"C_Truck_02_fuel_F", 0.1]] call _fnc_saveToTemplate;
 
 ["uniforms", [
-    "vn_o_uniform_vc_01_01",
-    "vn_o_uniform_vc_01_02",
-    "vn_o_uniform_vc_02_07",
-    "vn_o_uniform_vc_03_02",
-    "vn_o_uniform_vc_04_02",
-    "vn_o_uniform_vc_05_01",
-    "vn_o_uniform_vc_02_05",
-    "vn_o_uniform_vc_04_03",
-    "vn_o_uniform_vc_03_03"
+    "gm_gc_civ_uniform_man_03_80_blu",
+    "gm_gc_civ_uniform_man_03_80_grn",
+    "gm_gc_civ_uniform_man_03_80_gry",
+    "gm_gc_civ_uniform_man_04_80_blu",
+    "gm_gc_civ_uniform_man_04_80_gry",
+    "gm_gc_civ_uniform_man_01_80_blk",
+    "gm_gc_civ_uniform_man_01_80_blu",
+    "gm_gc_civ_uniform_man_02_80_brn",
+    "gm_ge_civ_uniform_blouse_80_gry"
 ]] call _fnc_saveToTemplate;
 
 ["headgear", [
-    "vn_c_headband_04",
-    "vn_c_headband_03",
-    "vn_c_headband_02",
-    "vn_c_headband_01",
-    "vn_c_conehat_02",
-    "vn_c_conehat_01"
+    "H_Cap_blk",
+    "H_Cap_blu",
+    "H_Cap_grn",
+    "H_Cap_grn_BI",
+    "H_Cap_oli",
+    "H_Cap_red",
+    "H_Cap_surfer",
+    "H_Cap_tan",
+    "H_StrawHat",
+    "H_StrawHat_dark",
+    "H_Hat_checker"
 ]] call _fnc_saveToTemplate;
 
 /////////////////////
 ///  Identities   ///
 /////////////////////
 
-["faces", ["AsianHead_A3_01","AsianHead_A3_02","AsianHead_A3_03","AsianHead_A3_04","AsianHead_A3_05","AsianHead_A3_06","AsianHead_A3_07"]] call _fnc_saveToTemplate;
-["currencySymbol", "$"] call _fnc_saveToTemplate;
+["faces", []] call _fnc_saveToTemplate;
+["currencySymbol", "€"] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //
@@ -134,7 +139,7 @@ private _loadoutData = call _fnc_createLoadoutData;
 _loadoutData set ["uniforms", _civUniforms];
 _loadoutData set ["pressUniforms", _pressUniforms];
 _loadoutData set ["workerUniforms", _workerUniforms];
-_loadoutData set ["workerHelmets", ["vn_c_conehat_02"]];
+_loadoutData set ["workerHelmets", ["H_Construction_basic_black_F"]];
 _loadoutData set ["pressVests", ["V_Press_F"]];
 _loadoutData set ["helmets", _civHats];
 _loadoutData set ["pressHelmets", ["H_Cap_press", "H_PASGT_basic_blue_press_F", "H_PASGT_neckprot_blue_press_F"]];
