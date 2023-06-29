@@ -2,7 +2,7 @@
 //   Side Information   //
 //////////////////////////
 
-["name", "NATO ForcesTest"] call _fnc_saveToTemplate;
+["name", "NATO Forces"] call _fnc_saveToTemplate;
 ["spawnMarkerName", format [localize "STR_supportcorridor", "NATO"]] call _fnc_saveToTemplate;
 
 ["flag", "Flag_NATO_F"] call _fnc_saveToTemplate;
@@ -65,7 +65,7 @@
 
 ["vehiclesPolice", ["gm_ge_army_typ253_mp", "vn_b_wheeled_m151_01_mp"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["gm_ge_army_mg3_aatripod", "vn_b_aus_army_static_m60_high", "vn_b_army_static_m1919a4_high", "vn_b_rok_army_static_m2_high"]] call _fnc_saveToTemplate;
+["staticMGs", ["vn_b_aus_army_static_m60_high", "vn_b_army_static_m1919a4_high", "vn_b_rok_army_static_m2_high"]] call _fnc_saveToTemplate;
 ["staticATs", ["vn_b_army_static_tow"]] call _fnc_saveToTemplate;
 ["staticAAs", ["RHS_Stinger_AA_pod_USMC_WD"]] call _fnc_saveToTemplate;
 ["staticMortars", ["vn_b_nz_army_static_mortar_m29"]] call _fnc_saveToTemplate;
@@ -86,11 +86,11 @@
 #include "BW_Vehicle_Attributes.sqf"
 
 ["variants", [
-    ["I_LT_01_cannon_F", ["Indep_Olive","showTools",1,"showCamonetHull",1,"showBags",0,"showSLATHull",1]],
-    ["RHS_AH64D_wd", ["standard","radar_hide",1]],
+    ["I_LT_01_cannon_F", ["Indep_Olive",1]],
+    ["RHS_AH64D_wd", ["standard",1]],
     ["vn_b_armor_m125_01", ["m125_43",1]],
-    ["rhsusf_m1025_w_m2", ["Olive","hide_snorkel",1,"hide_CIP",1,"hide_BFT",1,"hide_Antenna",1,"hide_A2_Parts",1,"Hide_A2Bumper",1,"Hide_Brushguard",1,1]],
-    ["rhsusf_m1025_w_mk19", ["Olive","hide_snorkel",1,"hide_CIP",1,"hide_BFT",1,"hide_Antenna",1,"hide_A2_Parts",1,"Hide_A2Bumper",1,"Hide_Brushguard",1,1]],
+    ["rhsusf_m1025_w_m2", ["Olive",1]],
+    ["rhsusf_m1025_w_mk19", ["Olive",1]],
     ["vn_b_armor_m113_01", ["m113_43",1]],
     ["vn_b_armor_m132_01", ["m132_43",1]],
     ["B_Radar_System_01_F", ["Olive",1]],
@@ -251,7 +251,7 @@ _sfLoadoutData set ["helmets", ["gm_ge_headgear_hat_beanie_blk", "gm_ge_headgear
 _sfLoadoutData set ["NVGs", ["gm_ferod51_oli"]];
 _sfLoadoutData set ["binoculars", ["gm_lp7_oli"]];
 _sfLoadoutData set ["antiInfantryGrenades", ["gm_handgrenade_conc_dm51a1", "gm_handgrenade_conc_dm51"]];
-_sfLoadoutData set ["lightATLaunchers", ["gm_pzf3_blk"]];
+_sfLoadoutData set ["ATLaunchers", ["gm_pzf3_blk"]];
 _sfLoadoutData set ["lightHELaunchers", ["gm_m72a3_oli"]];
 
 _sfLoadoutData set ["rifles", [
@@ -355,7 +355,7 @@ _militaryLoadoutData set ["GLvests", ["gm_ge_army_vest_80_demolition"]];
 _militaryLoadoutData set ["backpacks", ["gm_dk_army_backpack_73_oli"]];
 _militaryLoadoutData set ["helmets", ["gm_ge_headgear_m62_net"]];
 
-_militaryLoadoutData set ["lightATLaunchers", ["gm_pzf44_2_oli"]];
+_militaryLoadoutData set ["ATLaunchers", ["gm_pzf44_2_oli"]];
 _militaryLoadoutData set ["lightHELaunchers", ["gm_pzf44_2_oli"]];
 
 _militaryLoadoutData set ["slRifles", [
@@ -487,6 +487,7 @@ private _squadLeaderTemplate = {
     [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
     [["SLvests", "vests"] call _fnc_fallback] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
+    ["backpacks"] call _fnc_setBackpack;
 
     [["slRifles", "rifles"] call _fnc_fallback] call _fnc_setPrimary;
     ["primary", 6] call _fnc_addMagazines;
@@ -522,8 +523,8 @@ private _riflemanTemplate = {
     ["primary", 6] call _fnc_addMagazines;
 
     if (random 1 < 0.15) then {
-		[["lightHELaunchers", "lightATLaunchers"] call _fnc_fallback] call _fnc_setLauncher;
-		["launcher", 1] call _fnc_addMagazines;
+		[["lightATLaunchers"] call _fnc_fallback] call _fnc_setLauncher;
+		["launcher", 0] call _fnc_addMagazines;
 	} else {
 		["sidearms"] call _fnc_setHandgun;
 		["handgun", 2] call _fnc_addMagazines;
@@ -699,9 +700,9 @@ private _latTemplate = {
     [selectRandom ["rifles", "carbines"]] call _fnc_setPrimary;
     ["primary", 6] call _fnc_addMagazines;
 
-    [["lightATLaunchers", "ATLaunchers"] call _fnc_fallback] call _fnc_setLauncher;
+    [["lightATLaunchers"] call _fnc_fallback] call _fnc_setLauncher;
     //TODO - Add a check if it's disposable.
-    ["launcher", 3] call _fnc_addMagazines;
+    ["launcher", 0] call _fnc_addMagazines;
 
     ["sidearms"] call _fnc_setHandgun;
     ["handgun", 2] call _fnc_addMagazines;
@@ -758,7 +759,7 @@ private _aaTemplate = {
 
     ["AALaunchers"] call _fnc_setLauncher;
     //TODO - Add a check if it's disposable.
-    ["launcher", 3] call _fnc_addMagazines;
+    ["launcher", 0] call _fnc_addMagazines;
 
     ["items_medical_standard"] call _fnc_addItemSet;
     ["items_aa_extras"] call _fnc_addItemSet;
