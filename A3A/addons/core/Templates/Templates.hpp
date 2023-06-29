@@ -730,7 +730,7 @@ class Templates
         logo = "\gm\gm_core\data\logos\gm_logo_ca.paa";
         basepath = QPATHTOFOLDER(Templates\Templates\BW);
         priority = 60;
-        equipFlags[] = {"lowTech"};
+        equipFlags[] = {"specialGM"};
         forceDLC[] = {"gm"};
     };
 
@@ -746,7 +746,6 @@ class Templates
     
     class BW_Soviet : BW_Base
     {
-        priority = 61;
         side = "Inv";
         flagTexture = "\gm\gm_core\data\flags\gm_flag_ur_co.paa";
         name = "GM+VN+RHS Soviet";
@@ -759,7 +758,7 @@ class Templates
         side = "Civ";
         flagTexture = "\gm\gm_core\data\flags\gm_flag_ge_co.paa";
         name = "GM+VN+RHS Civi";
-        file = "BW_AI_CIV";
+        file = "BW_CIV";
         description = $STR_A3AP_setupFactionsTab_bw_civs;
     };
 
