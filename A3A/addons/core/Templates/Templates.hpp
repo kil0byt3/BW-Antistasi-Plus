@@ -743,4 +743,33 @@ class Templates
         file = "BW_AI_NATO";
         description = $STR_A3AP_setupFactionsTab_bw_nato;
     };
+    
+    class BW_Soviet : BW_Base
+    {
+        priority = 61;
+        side = "Inv";
+        flagTexture = "\gm\gm_core\data\flags\gm_flag_ur_co.paa";
+        name = "GM+VN+RHS Soviet";
+        file = "BW_AI_SOV";
+        description = $STR_A3AP_setupFactionsTab_bw_soviet;
+    };
+
+    class BW_Civ : BW_Base
+    {
+        side = "Civ";
+        flagTexture = "\gm\gm_core\data\flags\gm_flag_ge_co.paa";
+        name = "GM+VN+RHS Civi";
+        file = "BW_AI_CIV";
+        description = $STR_A3AP_setupFactionsTab_bw_civs;
+    };
+
+    class BW_Rebels : BW_Base
+    {
+        side = "Reb";
+        flagTexture = "\a3\Data_F_Enoch\Flags\flag_EAF_CO.paa";
+        name = "GM+VN+RHS Rebels";
+        file = "BW_P_REBEL";
+        description = $STR_A3AP_setupFactionsTab_bw_rebels;
+    };
+
 };
