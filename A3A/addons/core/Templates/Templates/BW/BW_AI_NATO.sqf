@@ -418,7 +418,7 @@ _militiaLoadoutData set ["carbines", [
 ["gm_m16a1_blk", "", "", "", ["gm_30Rnd_556x45mm_B_M855_stanag_gry"], [], ""]
 ]];
 _militiaLoadoutData set ["grenadeLaunchers", [
-["vn_m16_m203", "", "", "", ["gm_30Rnd_556x45mm_B_M855_stanag_gry"], ["rhs_mag_M441_HE", "rhs_mag_M441_HE", "rhs_mag_M441_HE", "rhs_mag_m714_White"], ""]
+["vn_m16_m203", "", "", "", ["gm_30Rnd_556x45mm_B_M855_stanag_gry"], ["vn_40mm_m433_hedp_mag", "vn_40mm_m433_hedp_mag", "vn_40mm_m433_hedp_mag", "vn_40mm_m680_smoke_w_mag"], ""]
 ]];
 _militiaLoadoutData set ["SMGs", [
 ["gm_mp5a2_blk", "", "", "", ["gm_30Rnd_9x19mm_B_DM11_mp5a3_blk"], [], ""]
