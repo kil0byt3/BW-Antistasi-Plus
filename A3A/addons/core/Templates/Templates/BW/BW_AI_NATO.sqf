@@ -80,8 +80,8 @@
 ["mortarMagazineSmoke", "vn_mortar_m29_mag_wp_x8"] call _fnc_saveToTemplate;
 
 
-["minefieldAT", ["gm_mine_at_dm21"]] call _fnc_saveToTemplate;
-["minefieldAPERS", ["gm_mine_ap_dm31"]] call _fnc_saveToTemplate;
+["minefieldAT", ["gm_minestatic_at_dm21"]] call _fnc_saveToTemplate;
+["minefieldAPERS", ["gm_minestatic_ap_dm31"]] call _fnc_saveToTemplate;
 
 #include "BW_Vehicle_Attributes.sqf"
 
@@ -211,27 +211,8 @@ _loadoutData set ["items_crew_extras", []];
 _loadoutData set ["items_unarmed_extras", []];
 
 _loadoutData set ["glasses", [
-    "G_Aviator",
-    "G_Squares_Tinted",
-    "G_Squares",
-    "rhsusf_shemagh_od",
-    "rhsusf_shemagh2_od",
-    "rhsusf_shemagh_grn",
-    "rhsusf_shemagh2_grn",
-    "rhs_googles_black",
-    "rhs_googles_clear",
-    "rhs_googles_orange"
 ]];
 _loadoutData set ["goggles", [
-    "rhs_ess_black",
-    "rhs_googles_yellow",
-    "rhsusf_shemagh_gogg_grn",
-    "rhsusf_shemagh2_gogg_grn",
-    "rhsusf_shemagh_gogg_od",
-    "rhsusf_shemagh2_gogg_od",
-    "rhsusf_oakley_goggles_clr",
-    "rhsusf_oakley_goggles_blk",
-    "rhsusf_oakley_goggles_ylw"
 ]];
 
 //TODO - ACE overrides for misc essentials, medical and engineer gear
