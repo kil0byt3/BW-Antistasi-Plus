@@ -58,7 +58,7 @@
 ["uavsAttack", []] call _fnc_saveToTemplate;
 ["uavsPortable", []] call _fnc_saveToTemplate;
 //Config special vehicles - militia vehicles are mostly used in the early game, police cars are being used by troops around cities -- Example:
-["vehiclesMilitiaLightArmed", ["rhsusf_m1025_w_m2", "rhsusf_m1025_w_mk19"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["rhsusf_m1025_w_m2"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["vn_b_wheeled_m54_01", "vn_b_wheeled_m54_02_sog"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["vn_b_wheeled_m151_01", "vn_b_wheeled_m151_02"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaAPCs", ["vn_b_armor_m113_01", "vn_b_armor_m132_01"]] call _fnc_saveToTemplate;
@@ -297,7 +297,7 @@ _eliteLoadoutData set ["designatedGrenadeLaunchers", [
 ["gm_hk69a1_blk", "", "", "", ["1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], [], ""]
 ]];
 _eliteLoadoutData set ["grenadeLaunchers", [
-["vn_m16_m203", "", "", "", ["gm_30Rnd_556x45mm_B_M855_stanag_gry"], ["rhs_mag_M433_HEDP"], ""]
+["vn_m16_m203", "", "", "", ["gm_30Rnd_556x45mm_B_M855_stanag_gry"], ["vn_40mm_m433_hedp_mag"], ""]
 ]];
 _eliteLoadoutData set ["SMGs", [
 ["gm_mp5n_blk", "", "", "", ["gm_30Rnd_9x19mm_B_DM11_mp5a3_blk"], [], ""]

@@ -226,7 +226,7 @@ _sfLoadoutData set ["slRifles", [
 ]];
 
 _sfLoadoutData set ["rifles", [
-["gm_mpikms72_blk", "gm_suppressor_pbs1_762mm_blk", "gm_zln1k_ir_dovetail_blk", "", ["gm_30Rnd_762x39mm_B_57N231_mpikm_blk"], [], ""]
+["gm_mpikms72_blk", "gm_suppressor_pbs1_762mm_blk", "gm_zln1k_ir_dovetail_blk", "gm_flashlightp2_wht_akhandguard_blu", ["gm_30Rnd_762x39mm_B_57N231_mpikm_blk"], [], ""]
 ]];
 _sfLoadoutData set ["carbines", [
 ["gm_mpikms72k_blk", "gm_suppressor_pbs1_762mm_blk", "gm_pka_dovetail_blk", "", ["gm_30Rnd_762x39mm_B_57N231_mpikm_blk"], [], ""]
