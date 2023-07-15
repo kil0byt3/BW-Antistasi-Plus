@@ -10,10 +10,6 @@ private _credits = [
 	[ (localize "STR_antistasi_credits_authors"), ["Barbolani","Official Antistasi Community"]]
 ];
 
-if ("coldWar" in A3A_factionEquipFlags) then {
-	_credits pushBack [[localize "STR_antistasi_credits_cw_mode", "<t size=1.5 font='PuristaBold' color='#B6020B'>%1</t>"], [""]];
-};
-
 private _layer = "credits1" call bis_fnc_rscLayer;
 
 {

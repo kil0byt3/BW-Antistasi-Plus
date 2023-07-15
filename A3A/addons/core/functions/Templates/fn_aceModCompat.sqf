@@ -5,7 +5,6 @@ FIX_LINE_NUMBERS()
 ////////////////////////////////////
 Info("Creating ACE Items List");
 aceItems = [
-	"ACE_EarPlugs",
 	"ACE_RangeCard",
 	"ACE_Clacker",
 	"ACE_DefusalKit",
@@ -26,24 +25,17 @@ aceItems = [
 ];
 
 aceMedItems = [
-	"ACE_fieldDressing",
 	"ACE_elasticBandage",
 	"ACE_packingBandage",
-	"ACE_quikclot",
-	"ACE_plasmaIV",
-	"ACE_plasmaIV_500",
-	"ACE_plasmaIV_250",
 	"ACE_salineIV",
 	"ACE_salineIV_500",
 	"ACE_salineIV_250",
-	"ACE_surgicalKit",
 	"ACE_tourniquet",
 	"ACE_epinephrine",
 	"ACE_morphine",
 	"ACE_adenosine",
 	"ACE_splint",
-	"ACE_bodyBag",
-	"ACE_personalAidKit"
+	"ACE_bodyBag"
 ];
 
 aceMedItemsBlood = [
@@ -134,14 +126,7 @@ katMedItems = [
 
 aceCoolingItems = [
 	"ACE_Canteen",
-	"ACE_Canteen_Half",
-	"ACE_Canteen_Empty",
-	"ACE_WaterBottle",
-	"ACE_WaterBottle_Half",
-	"ACE_WaterBottle_Empty",
-	"ACE_Can_Franta",
-	"ACE_Can_RedGull",
-	"ACE_Can_Spirit"
+	"ACE_Can_RedGull"
 ];
 
 aceFoodItems = [

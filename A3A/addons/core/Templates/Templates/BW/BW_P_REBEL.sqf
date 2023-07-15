@@ -82,34 +82,37 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ///////////////////////////
 
 private _initialRebelEquipment = [
+    "vn_b_item_compass",
     "vn_mx991_m1911", "vn_m1911", "vn_m1911_mag",
     "gm_hk512_wud", "gm_7rnd_12ga_hk512_pellet", "gm_7rnd_12ga_hk512_slug",
     "vn_m9130", "vn_m38_mag",
     "vn_izh54", "vn_izh54_mag",
     "vn_m1903", "vn_m1903_mag",
-    "ACRE_PRC148", "ACRE_PRC343",
     "rhs_mag_rdg2_white", "vn_rgd33_grenade_mag", "vn_rdg2_mag", "vn_rkg3_grenade_mag",
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
-    "gm_ge_backpack_satchel_80_blk",
     "gm_ferod16_oli",
     "JCA_HF_HandFlare_Green","JCA_HF_HandFlare_Red",
     "rhs_mag_nspd", "rhs_mag_nspn_yellow", "rhs_mag_nspn_green", "rhs_mag_nspn_red",
-    "gm_pl_army_vest_80_rifleman_gry","gm_pl_army_vest_80_rig_gry"
+    "gm_pl_army_vest_80_rifleman_gry","gm_pl_army_vest_80_rig_gry",
+    "G_Aviator","gm_ge_facewear_acidgoggles","gm_ge_facewear_m65","gm_xx_facewear_scarf_01_flk","gm_xx_facewear_scarf_01_blk","gm_xx_facewear_scarf_01_grn","gm_xx_facewear_scarf_02_grn","gm_ge_facewear_stormhood_blk","rhsusf_shemagh_grn","rhsusf_shemagh2_grn","rhsusf_shemagh_tan","rhsusf_shemagh2_tan","rhsusf_shemagh_gogg_grn","rhsusf_shemagh2_gogg_grn","rhsusf_shemagh_gogg_tan","rhsusf_shemagh2_gogg_tan"
 ];
 
 private _civilianBackpacks =  [];
 if (_hasLawsOfWar) then {
+    _civilianBackpacks append [];
+} else {
     _civilianBackpacks append [
+        "B_FieldPack_blk",
+        "B_AssaultPack_blk",
         "B_Messenger_Black_F", 
         "B_Messenger_Coyote_F", 
         "B_Messenger_Gray_F",
         "B_Messenger_Olive_F", 
         "B_LegStrapBag_black_F", 
         "B_LegStrapBag_coyote_F", 
-        "B_LegStrapBag_olive_F"
+        "B_LegStrapBag_olive_F",
+        "gm_ge_backpack_satchel_80_blk"
     ];
-} else {
-    _civilianBackpacks pushBack "B_AssaultPack_blk";
 };
 
 ["civilianBackpacks", _civilianBackpacks createHashMapFromArray []] call _fnc_saveToTemplate;

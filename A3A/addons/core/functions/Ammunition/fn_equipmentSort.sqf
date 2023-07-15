@@ -183,16 +183,13 @@ allMagBullet = allMagBullet select { getText (configFile >> "CfgMagazines" >> _x
 allNVGs = allNVGs select { getarray (configFile >> "CfgWeapons" >> _x >> "visionMode") isnotequalto ["Normal","Normal"]};
 
 private _removableDefaultItems = [
-	[allFirstAidKits,"FirstAidKit","firstAidKits"],
-	[allMedikits,"Medikit","mediKits"],
-	[allToolkits,"ToolKit","toolKits"],
-	[allMaps,"ItemMap","itemMaps"]
+	[allFirstAidKits,"FirstAidKit"],
+	[allMedikits,"Medikit"],
+	[allToolkits,"ToolKit"],
+	[allMaps,"ItemMap"]
 ];
 {
-	_x params ["_itemCategoryArray","_vanillaItem","_templateVariable"];
+	_x params ["_itemCategoryArray","_templateVariable"];
 	private _allowedItems = A3A_faction_reb get _templateVariable;
-	if !(_vanillaItem in _allowedItems) then {
-		_itemCategoryArray deleteAt (_itemCategoryArray find _vanillaItem);
-	};
 } forEach _removableDefaultItems;
 
