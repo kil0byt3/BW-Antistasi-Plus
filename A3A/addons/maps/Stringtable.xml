@@ -384,6 +384,18 @@
                 <Russian>Пересечение границы еще никогда не было таким простым.</Russian>
                 <Korean>국경을 넘는 것이 그렇게 쉬운 적은 없었습니다.</Korean>
             </Key>
+            <Key ID="STR_antistasi_mission_info_brf_sumava_mapname_text">
+                <Original>Antistasi Plus - BW - Sumava</Original>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_brf_sumava_mapname_short_text">
+                <Original>Antistasi Plus - BW - Sumava</Original>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_brf_sumava_blurb_text">
+                <Original>Imagine not owning GM</Original>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_brf_sumava_description_text">
+                <Original>Be the Resistance Leader. Fight against a superior enemy in technology, number, assets and vehicles. Use guerrilla tactics in a totally dynamic world, with around 30+ sidemissions, everywhere, anytime, anything.</Original>
+            </Key>
         </Container>
     </Package>
 </Project>
