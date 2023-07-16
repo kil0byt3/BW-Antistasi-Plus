@@ -724,59 +724,115 @@ class Templates
 
     //************* BW - GM+VN+RHS ********************************************************
 
-    class BW_Base : Base
+    class BW_GM_Base : Base
     {
         requiredAddons[] = {"gm_weapons_items"};
         logo = "\gm\gm_core\data\logos\gm_logo_ca.paa";
-        basepath = QPATHTOFOLDER(Templates\Templates\BW);
+        basepath = QPATHTOFOLDER(Templates\Templates\BW_GM);
         priority = 60;
         equipFlags[] = {"specialGM"};
         forceDLC[] = {"gm"};
     };
 
-    class BW_NATO : BW_Base
+    class BW_GM_NATO : BW_GM_Base
     {
         priority = 61;
         side = "Occ";
         flagTexture = "\gm\gm_core\data\flags\gm_flag_ge_co";
-        name = "GM+VN+RHS NATO";
-        file = "BW_AI_NATO";
-        description = $STR_A3AP_setupFactionsTab_bw_nato;
+        name = "BW-GM+VN+RHS NATO";
+        file = "BW_AI_GM_NATO";
+        description = $STR_A3AP_setupFactionsTab_bw_gm_nato;
     };
     
-    class BW_Soviet : BW_Base
+    class BW_GM_Soviet : BW_GM_Base
     {
         side = "Inv";
         flagTexture = "\gm\gm_core\data\flags\gm_flag_ur_co.paa";
-        name = "GM+VN+RHS Soviet";
-        file = "BW_AI_SOV";
-        description = $STR_A3AP_setupFactionsTab_bw_soviet;
+        name = "BW-GM+VN+RHS Soviet";
+        file = "BW_AI_GM_SOV";
+        description = $STR_A3AP_setupFactionsTab_bw_gm_soviet;
     };
 
-    class BW_Civ : BW_Base
+    class BW_GM_Civ : BW_GM_Base
     {
         side = "Civ";
         flagTexture = "\gm\gm_core\data\flags\gm_flag_ge_co.paa";
-        name = "GM+VN+RHS Civi";
-        file = "BW_CIV";
-        description = $STR_A3AP_setupFactionsTab_bw_civs;
+        name = "BW-GM+VN+RHS Civi";
+        file = "BW_GM_CIV";
+        description = $STR_A3AP_setupFactionsTab_bw_gm_civs;
     };
 
-    class BW_Rebels : BW_Base
+    class BW_GM_Rebels : BW_GM_Base
     {
         side = "Reb";
         flagTexture = "\a3\Data_F_Enoch\Flags\flag_EAF_CO.paa";
-        name = "GM+VN+RHS Rebels";
-        file = "BW_P_REBEL";
-        description = $STR_A3AP_setupFactionsTab_bw_rebels;
+        name = "BW-GM+VN+RHS Rebels";
+        file = "BW_P_GM_REBEL";
+        description = $STR_A3AP_setupFactionsTab_bw_gm_rebels;
     };
 
-    class BW_Rivals : BW_Base
+    class BW_GM_Rivals : BW_GM_Base
     {
         side = "Riv";
         flagTexture = "\A3\Data_F_Exp\Flags\flag_SYND_CO.paa";
-        name = "GM+VN+RHS Rivals";
-        file = "BW_AI_RIVAL";
-        description = $STR_A3AP_setupFactionsTab_bw_rivals;
+        name = "BW-GM+VN+RHS Rivals";
+        file = "BW_AI_GM_RIVAL";
+        description = $STR_A3AP_setupFactionsTab_bw_gm_rivals;
+    };
+
+    //************* BW - SFP+RHS ********************************************************
+
+    class BW_SFP_Base : Base
+    {
+        requiredAddons[] = {"rhsgref_main"};
+        logo = "a3\ui_f\data\logos\arma3_white_ca.paa";
+        basepath = QPATHTOFOLDER(Templates\Templates\BW_SFP);
+        priority = 60;
+    };
+
+    class BW_SFP_NATO : BW_SFP_Base
+    {
+        priority = 61;
+        side = "Occ";
+        flagTexture = "a3\ui_f\data\logos\arma3_white_ca.paa";
+        name = "BW-SFP+RHS NATO";
+        file = "BW_AI_SFP_NATO";
+        description = $STR_A3AP_setupFactionsTab_bw_sfp_nato;
+    };
+    
+    class BW_SFP_Soviet : BW_SFP_Base
+    {
+        side = "Inv";
+        flagTexture = "a3\ui_f\data\logos\arma3_white_ca.paa";
+        name = "BW-SFP+RHS Soviet";
+        file = "BW_AI_SFP_SOV";
+        description = $STR_A3AP_setupFactionsTab_bw_sfp_soviet;
+    };
+
+    class BW_SFP_Civ : BW_SFP_Base
+    {
+        side = "Civ";
+        flagTexture = "a3\ui_f\data\logos\arma3_white_ca.paa";
+        name = "BW-SFP+RHS Civi";
+        file = "BW_SFP_CIV";
+        description = $STR_A3AP_setupFactionsTab_bw_sfp_civs;
+    };
+
+    class BW_SFP_Rebels : BW_SFP_Base
+    {
+        side = "Reb";
+        flagTexture = "\a3\Data_F_Enoch\Flags\flag_EAF_CO.paa";
+        name = "BW-SFP+RHS Rebels";
+        file = "BW_P_SFP_REBEL";
+        description = $STR_A3AP_setupFactionsTab_bw_sfp_rebels;
+    };
+
+    class BW_SFP_Rivals : BW_SFP_Base
+    {
+        side = "Riv";
+        flagTexture = "\A3\Data_F_Exp\Flags\flag_SYND_CO.paa";
+        name = "BW-SFP+RHS Rivals";
+        file = "BW_AI_SFP_RIVAL";
+        description = $STR_A3AP_setupFactionsTab_bw_sfp_rivals;
     };
 };
