@@ -41,13 +41,13 @@
 ["ammobox", "Box_FIA_Support_F"] call _fnc_saveToTemplate; 	//Don't touch or you die a sad and lonely death!
 ["surrenderCrate", "rhs_7ya37_1_single"] call _fnc_saveToTemplate;
 
-["vehiclesRivalsLightArmed", ["rhsgref_ins_uaz_ags", "rhsgref_ins_uaz_dshkm", "rhsgref_ins_uaz_spg9", "rhsgref_BRDM2_ins", "rhsgref_BRDM2_ATGM_ins", "rhsgref_BRDM2_HQ_ins"]] call _fnc_saveToTemplate;
-["vehiclesRivalsTrucks", ["rhsgref_ins_zil131", "rhsgref_ins_zil131_open"]] call _fnc_saveToTemplate;
-["vehiclesRivalsCars", ["rhsgref_BRDM2UM_ins", "rhsgref_ins_uaz_open", "rhsgref_ins_uaz"]] call _fnc_saveToTemplate;
-["vehiclesRivalsAPCs", ["rhsgref_ins_btr60", "rhsgref_ins_btr70", "rhsgref_ins_bmd1", "rhsgref_ins_bmd1p", "rhsgref_ins_bmd2", "rhsgref_ins_bmp1", "rhsgref_ins_bmp1d", "rhsgref_ins_bmp1k", "rhsgref_ins_bmp1p", "rhsgref_ins_bmp2e", "rhsgref_ins_bmp2", "rhsgref_ins_bmp2d", "rhsgref_ins_bmp2k"]] call _fnc_saveToTemplate;
-["vehiclesRivalsTanks", ["rhsgref_ins_t72ba", "rhsgref_ins_t72bb"]] call _fnc_saveToTemplate;
-["vehiclesRivalsHelis", ["rhsgref_ins_Mi8amt"]] call _fnc_saveToTemplate;			
-["vehiclesRivalsUavs", ["O_UAV_01_F"]] call _fnc_saveToTemplate;			
+["vehiclesRivalsLightArmed", ["rhsgref_ins_uaz_ags", "rhsgref_ins_uaz_dshkm", "rhsgref_ins_uaz_spg9", "rhsgref_BRDM2_ins_g", "rhsgref_BRDM2_ATGM_ins", "rhsgref_BRDM2_HQ_ins_g"]] call _fnc_saveToTemplate;
+["vehiclesRivalsTrucks", ["rhsgref_ins_g_zil131", "rhsgref_ins_g_zil131_open"]] call _fnc_saveToTemplate;
+["vehiclesRivalsCars", ["rhsgref_BRDM2UM_ins_g", "rhsgref_ins_g_uaz_open", "rhsgref_ins_g_uaz"]] call _fnc_saveToTemplate;
+["vehiclesRivalsAPCs", ["rhsgref_ins_g_bmp1k", "rhsgref_ins_g_bmp2d", "rhsgref_ins_g_btr70", "rhsgref_ins_g_btr60", "rhsgref_ins_g_bmd1"]] call _fnc_saveToTemplate;
+["vehiclesRivalsTanks", ["rhsgref_ins_g_t72ba", "rhsgref_ins_g_t72bb"]] call _fnc_saveToTemplate;
+["vehiclesRivalsHelis", ["RHS_UH60M2"]] call _fnc_saveToTemplate;			
+["vehiclesRivalsUavs", ["rhs_pchela1t_vvsc"]] call _fnc_saveToTemplate;			
 
 ["staticLowWeapons", [
 	"rhsgref_ins_DSHKM_Mini_TriPod", 
@@ -125,22 +125,13 @@ _loadoutData set ["binoculars", ["rhssaf_zrak_rd7j"]];
 _loadoutData set ["Rangefinder", ["rhs_pdu4"]];
 
 _loadoutData set ["uniforms", [
-	"rhs_uniform_gorka_r_g",
-	"rhs_uniform_gorka_r_g_gloves",
-	"rhs_uniform_gorka_r_y",
-	"rhs_uniform_gorka_r_y_gloves",
-	"rhs_uniform_gorka_1_a",
-	"rhs_uniform_gorka_1_b",
-	"rhs_uniform_afghanka_klmk",
-	"rhsgref_uniform_specter",
-	"rhsgref_uniform_specter",
-	"rhsgref_uniform_reed",
-	"rhsgref_uniform_reed",
-	"rhssaf_uniform_m93_oakleaf",
-	"rhssaf_uniform_m93_oakleaf",
-	"rhssaf_uniform_m93_oakleaf_summer",
-	"rhssaf_uniform_m93_oakleaf_summer",
-	"rhsgref_uniform_vsr"
+	"rhsgref_uniform_ttsko_urban",
+	"rhsgref_uniform_ttsko_mountain",
+	"rhsgref_uniform_ttsko_forest",
+	"rhsgref_uniform_vsr",
+	"rhsgref_uniform_para_ttsko_urban",
+	"rhsgref_uniform_para_ttsko_oxblood",
+	"rhsgref_uniform_para_ttsko_mountain"
 ]];
 
 _loadoutData set ["offuniforms", ["rhsgref_uniform_reed", "rhssaf_uniform_m93_oakleaf", "rhssaf_uniform_m93_oakleaf_summer", "rhsgref_uniform_vsr"]];
@@ -327,7 +318,7 @@ private _cellLeaderTemplate = {
 
 	if (random 1 < 0.15) then {
 		["lightATLaunchers"] call _fnc_setLauncher;
-		["launcher", 1] call _fnc_addMagazines;
+		["launcher", 0] call _fnc_addMagazines;
 	} else {
 		["sidearms"] call _fnc_setHandgun;
 		["handgun", 2] call _fnc_addMagazines;
@@ -398,7 +389,7 @@ private _enforcerTemplate = {
 
 	if (random 1 < 0.15) then {
 		["lightHELaunchers"] call _fnc_setLauncher;
-		["launcher", 1] call _fnc_addMagazines;
+		["launcher", 0] call _fnc_addMagazines;
 	} else {
 		["sidearms"] call _fnc_setHandgun;
 		["handgun", 2] call _fnc_addMagazines;
@@ -433,7 +424,7 @@ private _partisanTemplate = {
 
 	if (random 1 < 0.15) then {
 		["lightHELaunchers"] call _fnc_setLauncher;
-		["launcher", 1] call _fnc_addMagazines;
+		["launcher", 0] call _fnc_addMagazines;
 	} else {
 		["sidearms"] call _fnc_setHandgun;
 		["handgun", 2] call _fnc_addMagazines;
@@ -468,7 +459,7 @@ private _minutemanTemplate = {
 
 	if (random 1 < 0.15) then {
 		["lightATLaunchers"] call _fnc_setLauncher;
-		["launcher", 1] call _fnc_addMagazines;
+		["launcher", 0] call _fnc_addMagazines;
 	} else {
 		["sidearms"] call _fnc_setHandgun;
 		["handgun", 2] call _fnc_addMagazines;
@@ -647,7 +638,7 @@ private _aaTemplate = {
 
 	["AALaunchers"] call _fnc_setLauncher;
 	//TODO - Add a check if it's disposable.
-	["launcher", 3] call _fnc_addMagazines;
+	["launcher", 0] call _fnc_addMagazines;
 
 	["sidearms"] call _fnc_setHandgun;
 	["handgun", 2] call _fnc_addMagazines;
