@@ -18,33 +18,33 @@
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
 ["vehiclesBasic", ["B_Quadbike_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["rhs_tigr_msv", "rhs_tigr_m_msv"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["rhs_tigr_sts_msv", "rhs_tigr_sts_msv", "RHS_Ural_Zu23_MSV_01"]] call _fnc_saveToTemplate;
-["vehiclesTrucks", ["rhs_kamaz5350_msv", "rhs_kamaz5350_open_msv", "RHS_Ural_Open_MSV_01", "RHS_Ural_MSV_01"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", ["rhs_kamaz5350_flatbed_cover_msv", "rhs_kamaz5350_flatbed_msv", "RHS_Ural_Flat_MSV_01", "RHS_Ural_Open_Flat_MSV_01"]] call _fnc_saveToTemplate;
-["vehiclesAmmoTrucks", ["rhs_kamaz5350_ammo_msv", "RHS_Ural_Ammo_MSV_01"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["rhs_uaz_vdv", "rhs_tigr_msv", "rhs_uaz_open_vdv"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["rhs_tigr_sts_vdv", "rhsgref_BRDM2_HQ_vmf", "RHS_Ural_Zu23_VDV_01"]] call _fnc_saveToTemplate;
+["vehiclesTrucks", ["rhs_kamaz5350_open_msv", "rhs_kamaz5350_msv", "rhs_zil131_msv"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["rhs_kraz255b1_flatbed_msv", "rhs_zil131_flatbed_cover_msv", "rhs_gaz66o_flat_msv"]] call _fnc_saveToTemplate;
+["vehiclesAmmoTrucks", ["rhs_kamaz5350_ammo_vdv", "RHS_Ural_Ammo_VV_01", "rhs_gaz66_ammo_vdv"]] call _fnc_saveToTemplate;
 ["vehiclesRepairTrucks", ["RHS_Ural_Repair_MSV_01"]] call _fnc_saveToTemplate;
-["vehiclesFuelTrucks", ["RHS_Ural_Fuel_MSV_01"]] call _fnc_saveToTemplate;
+["vehiclesFuelTrucks", ["b_afougf_Ural_fuel", "b_afougf_kraz255b1_fuel"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["rhs_gaz66_ap2_msv"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["rhs_btr80_msv", "rhs_btr80a_msv"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["rhs_btr80_vdv", "rhs_btr80a_vdv"]] call _fnc_saveToTemplate;
 ["vehiclesAirborne", ["rhs_bmd1", "rhs_bmd1p", "rhs_bmd1pk", "rhs_bmd2m", "rhs_bmd2"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["rhs_bmd4m_vdv", "rhs_bmd4ma_vdv", "rhs_bmp3m_msv", "rhs_bmp3mera_msv", "rhs_bmp2e_msv", "rhs_bmp2_msv", "rhs_bmp2d_msv", "rhs_bmp2k_msv", "rhs_Ob_681_2"]] call _fnc_saveToTemplate;
-["vehiclesIFVs", []] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["rhs_bmp1d_tv", "rhs_bmp1p_vmf", "rhs_bmp2e_vdv"]] call _fnc_saveToTemplate;
+["vehiclesIFVs", ["rhsgref_BRDM2_vmf", "rhsgref_BRDM2_ATGM_vdv"]] call _fnc_saveToTemplate;
 
-["vehiclesLightTanks",  ["rhs_bmd1k", "rhs_bmd1pk", "rhs_sprut_vdv", "rhs_t72ba_tv", "rhs_t80"]] call _fnc_saveToTemplate;
+["vehiclesLightTanks",  ["rhs_t72ba_tv", "rhs_t72bb_tv"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["rhs_t72bd_tv", "rhs_t72be_tv", "rhs_t80a", "rhs_t80bv", "rhs_t80u", "rhs_t80um", "rhs_t72bb_tv", "rhs_t90sab_tv", "rhs_t90a_tv", "rhs_t90_tv"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["rhs_zsu234_aa"]] call _fnc_saveToTemplate;
 
 ["vehiclesTransportBoats", ["O_G_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["B_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["RHS_Su25SM_vvs", "RHS_Su25SM_vvsc"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["rhs_mig29sm_vvs", "rhs_mig29s_vvs", "RHS_T50_vvs_generic_ext"]] call _fnc_saveToTemplate;
-["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["RHS_Su25SM_vvs", "rhs_l159_CDF"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["rhs_mig29sm_vvs", "rhs_mig29s_vvs"]] call _fnc_saveToTemplate;
+["vehiclesPlanesTransport", ["RHS_AN2"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisTransport", ["RHS_Mi8AMT_vvs", "RHS_Mi8mt_vvsc", "RHS_Mi8AMT_vvs", "RHS_Mi8mt_vvsc", "RHS_Mi8AMT_vvs", "RHS_Mi8mt_vvsc", "RHS_Mi24V_vvsc", "RHS_Mi24V_vvs"]] call _fnc_saveToTemplate;
 ["vehiclesHelisLight", ["rhs_ka60_c", "RHS_Mi8T_vvsc", "RHS_Mi8T_vvs"]] call _fnc_saveToTemplate;
-["vehiclesHelisLightAttack", ["RHS_Mi8MTV3_vvs", "RHS_Mi8MTV3_vvsc", "RHS_Mi8MTV3_vvs", "RHS_Mi8MTV3_vvsc", "RHS_Mi24P_vvs", "RHS_Mi24P_vvsc"]] call _fnc_saveToTemplate;
+["vehiclesHelisLightAttack", ["RHS_Mi8MTV3_vvs", "RHS_Mi8MTV3_vvsc", "RHS_Mi24P_vvs", "RHS_Mi24P_vvsc"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["RHS_Ka52_vvsc", "rhs_mi28n_vvsc", "RHS_Ka52_vvs", "rhs_mi28n_vvs"]] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", ["rhs_2s1_tv", "rhs_2s3_tv", "RHS_BM21_VV_01"]] call _fnc_saveToTemplate;
@@ -84,6 +84,11 @@
 ["minefieldAPERS", ["rhs_mine_pmn2"]] call _fnc_saveToTemplate;
 
 #include "BW_Vehicle_Attributes.sqf"
+
+["variants", [
+    ["rhs_btr80_vdv", ["tricolourparade",1]],
+    ["rhs_btr80a_vdv", ["tricolourhard",1]]
+]] call _fnc_saveToTemplate;
 
 /////////////////////
 ///  Identities   ///
@@ -214,7 +219,7 @@ _loadoutData set ["goggles", ["rhs_ess_black"]];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_sfLoadoutData set ["uniforms", ["rhs_uniform_6sh122_v1", "rhs_uniform_6sh122_gloves_v1"]];
+_sfLoadoutData set ["uniforms", ["rhs_uniform_gorka_r_g", "rhs_uniform_gorka_r_g_gloves"]];
 _sfLoadoutData set ["vests", ["rhs_6b23_digi_6sh92_Spetsnaz", "rhs_6b23_digi_6sh92_spetsnaz2", "rhs_6b23_digi_6sh92_headset_spetsnaz"]];
 _sfLoadoutData set ["GLvests", ["rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz", "rhs_6b23_digi_6sh92_Vog_Spetsnaz"]];
 _sfLoadoutData set ["backpacks", ["rhs_rk_sht_30_emr", "rhs_rk_sht_30_olive", "rhs_assault_umbts"]];
@@ -545,7 +550,7 @@ _policeLoadoutData set ["sidearms", ["rhs_weap_makarov_pm", "rhs_weap_6p53"]];
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_militiaLoadoutData set ["uniforms", ["rhs_uniform_flora", "rhs_uniform_flora_patchless", "rhs_uniform_gorka_r_g"]];
+_militiaLoadoutData set ["uniforms", ["rhs_uniform_flora", "rhs_uniform_flora_patchless"]];
 _militiaLoadoutData set ["vests", ["rhs_6b3", "rhs_6b3_AK", "rhs_6b3_AK_2", "rhs_6b3_AK_3", "rhs_6sh92", "rhs_6sh92", "rhs_6sh92"]];
 _militiaLoadoutData set ["ATvests", ["rhs_6b3", "rhs_6b3_AK", "rhs_6b3_AK_2", "rhs_6b3_AK_3"]];
 _militiaLoadoutData set ["GLvests", ["rhs_6b3_VOG", "rhs_6b3_VOG_2", "rhs_6sh92_vog"]];
@@ -667,7 +672,7 @@ private _riflemanTemplate = {
 
     if (random 1 < 0.15) then {
 		[["lightHELaunchers", "lightATLaunchers"] call _fnc_fallback] call _fnc_setLauncher;
-		["launcher", 1] call _fnc_addMagazines;
+		["launcher", 0] call _fnc_addMagazines;
 	} else {
 		["sidearms"] call _fnc_setHandgun;
 		["handgun", 2] call _fnc_addMagazines;
@@ -838,7 +843,7 @@ private _latTemplate = {
     [selectRandom ["rifles", "carbines"]] call _fnc_setPrimary;
     ["primary", 6] call _fnc_addMagazines;
 
-    [["lightATLaunchers", "ATLaunchers"] call _fnc_fallback] call _fnc_setLauncher;
+    [["ATLaunchers"] call _fnc_fallback] call _fnc_setLauncher;
     //TODO - Add a check if it's disposable.
     ["launcher", 3] call _fnc_addMagazines;
 
@@ -897,7 +902,7 @@ private _aaTemplate = {
 
     ["AALaunchers"] call _fnc_setLauncher;
     //TODO - Add a check if it's disposable.
-    ["launcher", 3] call _fnc_addMagazines;
+    ["launcher", 0] call _fnc_addMagazines;
 
     ["items_medical_standard"] call _fnc_addItemSet;
     ["items_aa_extras"] call _fnc_addItemSet;
