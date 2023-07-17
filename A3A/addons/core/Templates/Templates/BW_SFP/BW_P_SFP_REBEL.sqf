@@ -10,28 +10,28 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["flagTexture", "\a3\Data_F_Enoch\Flags\flag_EAF_CO.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_EAF"] call _fnc_saveToTemplate;
 
-["vehicleBasic", "I_G_Quadbike_01_F"] call _fnc_saveToTemplate;
-["vehicleLightUnarmed", "rhsgref_nat_uaz_open"] call _fnc_saveToTemplate;
-["vehicleLightArmed", "rhsgref_nat_uaz_dshkm"] call _fnc_saveToTemplate;
-["vehicleTruck", "rhsgref_nat_ural_open"] call _fnc_saveToTemplate;
-["vehicleAT", "rhsgref_nat_uaz_spg9"] call _fnc_saveToTemplate;
-["vehicleAA", "rhsgref_nat_ural_Zu23"] call _fnc_saveToTemplate;
+["vehicleBasic", "b_afougf_quadbike_01"] call _fnc_saveToTemplate;
+["vehicleLightUnarmed", "b_afougf_offroad_armored_01"] call _fnc_saveToTemplate;
+["vehicleLightArmed", "b_afougf_m1151_m2_v1"] call _fnc_saveToTemplate;
+["vehicleTruck", "b_afougf_Ural_open"] call _fnc_saveToTemplate;
+["vehicleAT", "b_afougf_offroad_armored_at"] call _fnc_saveToTemplate;
+["vehicleAA", "b_afougf_gaz66_zu23"] call _fnc_saveToTemplate;
 
-["vehicleBoat", "I_C_Boat_Transport_02_F"] call _fnc_saveToTemplate;
-["vehicleRepair", "rhsgref_cdf_ural_repair"] call _fnc_saveToTemplate;
+["vehicleBoat", "sfp_gruppbat"] call _fnc_saveToTemplate;
+["vehicleRepair", "b_afougf_Ural_repair"] call _fnc_saveToTemplate;
 
-["vehiclePlane", "RHS_AN2"] call _fnc_saveToTemplate;
-["vehiclePayloadPlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
+["vehiclePlane", "b_afougf_an2"] call _fnc_saveToTemplate;
+["vehiclePayloadPlane", "sfp_saab340"] call _fnc_saveToTemplate;
 
-["vehicleCivCar", "C_Offroad_01_F"] call _fnc_saveToTemplate;
+["vehicleCivCar", "C_SUV_01_F"] call _fnc_saveToTemplate;
 ["vehicleCivTruck", "RHS_Ural_Open_Civ_03"] call _fnc_saveToTemplate;
-["vehicleCivHeli", "RHS_Mi8t_civilian"] call _fnc_saveToTemplate;
-["vehicleCivBoat", "C_Rubberboat"] call _fnc_saveToTemplate;
+["vehicleCivHeli", "rhs_uh1h_idap"] call _fnc_saveToTemplate;
+["vehicleCivBoat", "rhsgref_civ_canoe"] call _fnc_saveToTemplate;
 ["vehicleCivBoxSupply", "C_Van_01_box_F"] call _fnc_saveToTemplate;
 
-["staticMG", "rhsgref_nat_DSHKM"] call _fnc_saveToTemplate;
-["staticAT", "rhsgref_nat_SPG9"] call _fnc_saveToTemplate;
-["staticAA", "rhsgref_nat_ZU23"] call _fnc_saveToTemplate;
+["staticMG", "FA_UAF_M2_High"] call _fnc_saveToTemplate;
+["staticAT", "rhsgref_tla_g_SPG9"] call _fnc_saveToTemplate;
+["staticAA", "rhsgref_tla_g_ZU23"] call _fnc_saveToTemplate;
 ["staticMortar", "rhsgref_nat_2b14"] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "rhs_mag_3vo18_10"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "rhs_mag_d832du_10"] call _fnc_saveToTemplate;
@@ -85,32 +85,42 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["breachingExplosivesAPC", [["rhs_ec75_mag", 2], ["rhs_ec75_sand_mag", 2], ["rhs_ec200_mag", 1], ["rhs_ec200_sand_mag", 1], ["rhsusf_m112_mag", 1], ["DemoCharge_Remote_Mag", 1]]] call _fnc_saveToTemplate;
 ["breachingExplosivesTank", [["rhs_ec75_mag", 4], ["rhs_ec75_sand_mag", 4], ["rhs_ec200_mag", 2], ["rhs_ec200_sand_mag", 2], ["rhs_ec400_mag", 1], ["rhs_ec400_sand_mag", 1],["DemoCharge_Remote_Mag", 2], ["rhsusf_m112_mag", 2], ["rhsusf_m112x4_mag", 1], ["rhs_charge_M2tet_x2_mag", 1], ["SatchelCharge_Remote_Mag", 1]]] call _fnc_saveToTemplate;
 
+["variants", [
+    ["b_afougf_offroad_armored_01", ["OFFROAD_CAMO10",1]],
+    ["b_afougf_Ural_open", ["ZSUCAMO4",1]],
+    ["b_afougf_offroad_armored_at", ["OFFROAD_CAMO8",1]],
+    ["b_afougf_gaz66_zu23", ["ZSUCAMO10",1]],
+    ["b_afougf_btr80_common", ["ZSUCAMO5",1]],
+    ["b_afougf_t72bb", ["ZSUCAMO5",1]],
+    ["b_afougf_Ural_repair", ["ZSUCAMO4",1]]
+]] call _fnc_saveToTemplate;
+
 //////////////////////////////////////
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 
 ["blackMarketStock", [
-    ["RHS_TOW_TriPod_WD", 3000, "STATICAT", {tierWar > 3}],
+    ["rhs_Metis_9k115_2_msv", 3000, "STATICAT", {tierWar > 3}],
     ["rhsgref_nat_AGS30_TriPod", 3000, "STATICMG", {tierWar > 3}],
 
 
-    ["rhsgref_BRDM2UM_msv", 1750, "CAR", {true}],
-    ["rhsgref_BRDM2_HQ_msv", 2050, "CAR", {true}],
-    ["rhsgref_BRDM2_msv", 2500, "CAR", {true}],
+    ["FA_UAF_Dozor", 1750, "CAR", {true}],
+    ["FA_UAF_Fiona", 2050, "CAR", {true}],
+    ["FA_UAF_Dozor_Armed", 2500, "CAR", {true}],
 
-    ["rhsgref_nat_btr70", 6000, "APC", {true}],
-    ["rhs_bmd1k", 9000, "APC", {tierWar > 3 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
-    ["rhs_bmd2", 12500, "APC", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["b_afougf_btr80_common", 6000, "APC", {true}],
+    ["FA_UAF_BTR3", 12000, "APC", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["FA_UAF_BTR4", 12500, "APC", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
 
-    ["rhs_t72ba_tv", 20000, "TANK", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
-    ["rhs_t80", 21000, "TANK", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["b_afougf_t72bb", 20000, "TANK", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["FA_UAF_T84M", 21000, "TANK", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
     
-    ["rhs_zsu234_aa", 10000, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["b_afougf_ZU23", 10000, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
 
-    ["rhs_l159_CDF", 40000, "PLANE", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
+    ["b_afougf_l39m1", 40000, "PLANE", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
 
-    ["RHS_Mi8mt_vvsc", 15000, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
-    ["RHS_Mi8MTV3_vvsc", 25000, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}]
+    ["b_afougf_Mi8MTV3_Evac", 15000, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
+    ["b_afougf_Mi24V_AT", 25000, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}]
 ]] call _fnc_saveToTemplate;
 
 ///////////////////////////
@@ -118,13 +128,12 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ///////////////////////////
 
 private _initialRebelEquipment = [
-    "rhs_weap_savz61_folded", "rhs_weap_savz61", "rhsgref_10rnd_765x17_vz61", "rhsgref_20rnd_765x17_vz61",
-    "rhs_weap_Izh18", "rhsgref_1Rnd_00Buck", "rhsgref_1Rnd_Slug",
+    "rhs_weap_m38", "rhsgref_5Rnd_762x54_m38",
+    "sfp_remington870_wood_chrome", "sfp_12Gauge_8rd_Pellets", "sfp_12Gauge_8rd_Slug",
     "rhs_weap_kar98k", "rhsgref_5Rnd_792x57_kar98k",
-    "rhs_weap_panzerfaust60",
-    "rhs_grenade_nbhgr39B_mag", "rhs_grenade_sthgr24_mag",
+    "rhs_grenade_nbhgr39B_mag", "rhs_grenade_sthgr24_mag", "rhsgref_mag_rkg3em"
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
-    "B_FieldPack_oli",
+    "bp_afougf_assault_green", "TCGM_BikePack_oli",
     "Binocular",
     "rhs_weap_rsp30_white","rhs_mag_rsp30_white",
     "rhs_weap_rsp30_green","rhs_mag_rsp30_green",
@@ -159,26 +168,27 @@ if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment app
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [
-    "rhsgref_uniform_alpenflage",
-    "rhsgref_uniform_gorka_1_f",
-    "rhsgref_uniform_3color_desert",
-    "rhsgref_uniform_dpm",
-    "rhsgref_uniform_dpm_olive",
-    "rhsgref_uniform_flecktarn",
-    "rhsgref_uniform_flecktarn_full",
-    "rhsgref_uniform_og107",
-    "rhsgref_uniform_og107_erdl",
-    "rhsgref_uniform_tigerstripe",
+    "U_B_afou_Telnik01",
+    "U_B_afou_guershirt_13",
+    "U_C_civil_poloshirt_02",
+    "U_C_civil_poloshirt_04",
+    "U_B_afou_guershirt_11",
+    "U_B_afou_guershirt_10",
+    "U_B_afou_guershirt_05",
+    "U_C_civil_cloth_16",
+    "U_C_civil_cloth_04",
+    "U_C_civil_cloth_10",
     "rhsgref_uniform_woodland",
+    "U_C_civil_polopants_01",
     "rhsgref_uniform_woodland_olive"
 ];
 
 ["uniforms", _rebUniforms] call _fnc_saveToTemplate;
 
 ["headgear", [
-    "rhs_beanie_green",
+    "sfp_wool_beanie_green",
     "H_Bandanna_khk",
-    "H_Cap_blk",
+    "sfp_peltor2",
     "H_Cap_oli",
     "H_Cap_headphones",
     "rhs_headband"
