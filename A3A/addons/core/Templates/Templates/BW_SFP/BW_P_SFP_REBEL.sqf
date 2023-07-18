@@ -122,7 +122,7 @@ private _initialRebelEquipment = [
     "rhs_weap_m38", "rhsgref_5Rnd_762x54_m38",
     "sfp_remington870_wood_chrome", "sfp_12Gauge_8rd_Pellets", "sfp_12Gauge_8rd_Slug",
     "rhs_weap_kar98k", "rhsgref_5Rnd_792x57_kar98k",
-    "rhs_grenade_nbhgr39B_mag", "rhs_grenade_sthgr24_mag", "rhsgref_mag_rkg3em"
+    "rhs_grenade_nbhgr39B_mag", "rhs_grenade_sthgr24_mag", "rhsgref_mag_rkg3em",
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
     "bp_afougf_assault_green", "TCGM_BikePack_oli",
     "Binocular",
