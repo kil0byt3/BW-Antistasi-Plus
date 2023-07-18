@@ -42,7 +42,6 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 	"rhs_mine_M19_mag",
 	"rhs_mag_mine_ptm1",
 	"SLAMDirectionalMine_Wire_Mag",
-	"rhssaf_mine_tma4_mag",
 	"rhs_mine_TM43_mag"
 ]] call _fnc_saveToTemplate;
 ["minesAPERS", [
@@ -54,14 +53,6 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 	"rhsusf_mine_m14_mag",
 	"ClaymoreDirectionalMine_Remote_Mag",
 	"APERSTripMine_Wire_Mag",
-	"rhssaf_tm100_mag",
-	"rhssaf_tm200_mag",
-	"rhssaf_tm500_mag",
-	"rhssaf_mine_pma3_mag",
-	"rhssaf_mine_mrud_a_mag",
-	"rhssaf_mine_mrud_b_mag",
-	"rhssaf_mine_mrud_c_mag",
-	"rhssaf_mine_mrud_d_mag",
 	"rhs_mine_smine35_press_mag",
 	"rhs_mine_smine44_press_mag",
 	"rhs_mine_stockmine43_2m_mag",
@@ -222,7 +213,7 @@ _loadoutData set ["uniforms", _rebUniforms];
 
 _loadoutData set ["glasses", ["G_Shades_Black", "G_Shades_Blue", "G_Shades_Green", "G_Shades_Red", "G_Aviator", "G_Spectacles", "G_Spectacles_Tinted", "G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Greenblack", "G_Sport_Checkered", "G_Sport_Red", "G_Squares", "G_Squares_Tinted"]];
 _loadoutData set ["goggles", ["G_Lowprofile"]];
-_loadoutData set ["facemask", ["rhssaf_veil_Green", "G_Bandanna_blk", "G_Bandanna_oli", "G_Bandanna_khk", "G_Bandanna_tan", "G_Bandanna_beast", "G_Bandanna_shades", "G_Bandanna_sport", "G_Bandanna_aviator"]];
+_loadoutData set ["facemask", ["G_Bandanna_blk", "G_Bandanna_oli", "G_Bandanna_khk", "G_Bandanna_tan", "G_Bandanna_beast", "G_Bandanna_shades", "G_Bandanna_sport", "G_Bandanna_aviator"]];
 
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies];
 _loadoutData set ["items_medical_standard", ["STANDARD"] call A3A_fnc_itemset_medicalSupplies];
