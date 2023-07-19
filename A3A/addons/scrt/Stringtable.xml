@@ -1104,7 +1104,7 @@
                 <Korean>&lt;t size='0.6' color='#C1C0BB'&gt;소득&lt;br/&gt; &lt;t size='0.5' color='#C1C0BB'&gt;&lt;br/&gt;인력: +%1&lt;br/&gt;자금: +%2%3</Korean>
             </Key>
             <Key ID="STR_comms_mp_paycheck">
-                <Original>&lt;t size='0.6'&gt;%1 receieves &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt; for fighting for %4!&lt;/t&gt;</Original>
+                <Original>&lt;t size='0.6'&gt;%1 receieves &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt; for fighting for Sumava!&lt;/t&gt;</Original>
                 <Russian>&lt;t size='0.6'&gt;%1 получает &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt; на борьбу за %4!&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;t size='0.6'&gt;%1 收到了 &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt;，因为为%4!而战！&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;%1이(가) %4을(를) 위해 싸운 것에 대해 &lt;t size='0.6' color='#00FF00'&gt;%2%3&lt;/t&gt;을(를) 받았습니다!&lt;/t&gt;</Korean>
