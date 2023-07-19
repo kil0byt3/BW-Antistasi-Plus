@@ -13,7 +13,7 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["vehicleBasic", "b_afougf_quadbike_01"] call _fnc_saveToTemplate;
 ["vehicleLightUnarmed", "b_afougf_offroad_armored_01"] call _fnc_saveToTemplate;
 ["vehicleLightArmed", "b_afougf_m1151_m2_v1"] call _fnc_saveToTemplate;
-["vehicleTruck", "b_afougf_kraz255b1_flatbed"] call _fnc_saveToTemplate;
+["vehicleTruck", "b_afougf_Ural_open"] call _fnc_saveToTemplate;
 ["vehicleAT", "b_afougf_offroad_armored_at"] call _fnc_saveToTemplate;
 ["vehicleAA", "b_afougf_gaz66_zu23"] call _fnc_saveToTemplate;
 
@@ -26,7 +26,7 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["vehicleCivCar", "C_Offroad_01_F"] call _fnc_saveToTemplate;
 ["vehicleCivTruck", "RHS_Ural_Open_Civ_03"] call _fnc_saveToTemplate;
 ["vehicleCivHeli", "rhs_uh1h_idap"] call _fnc_saveToTemplate;
-["vehicleCivBoat", "C_Boat_Transport_02_F"] call _fnc_saveToTemplate;
+["vehicleCivBoat", "b_afougf_kraz255b1_flatbed"] call _fnc_saveToTemplate;
 ["vehicleCivBoxSupply", "C_Van_01_box_F"] call _fnc_saveToTemplate;
 
 ["staticMG", "FA_UAF_M2_High"] call _fnc_saveToTemplate;
