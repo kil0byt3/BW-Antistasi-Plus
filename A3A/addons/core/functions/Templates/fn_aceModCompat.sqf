@@ -38,11 +38,9 @@ aceMedItems = [
 	"ACE_bodyBag"
 ];
 
-aceMedItemsBlood = [
-	"ACE_bloodIV",
-	"ACE_bloodIV_250",
-	"ACE_bloodIV_500"
-];
+aceMedItemsBlood = []; // "ACE_bloodIV", "ACE_bloodIV_250", "ACE_bloodIV_500"
+
+
 
 advItems = [
 	"adv_aceCPR_AED"
