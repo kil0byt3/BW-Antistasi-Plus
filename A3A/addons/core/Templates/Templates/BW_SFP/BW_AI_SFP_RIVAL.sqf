@@ -101,7 +101,7 @@ _loadoutData set ["facewear", [
 	"G_Bandanna_shades",
 	"rhs_scarf"
 ]];
-_loadoutData set ["fullmask", [	"rhs_balaclava", "G_Balaclava_blk", "rhs_balaclava1_olive", "G_Balaclava_oli"]];
+_loadoutData set ["fullmask", [	"rhs_balaclava", "G_Balaclava_blk", "rhs_balaclava1_olive"]];
 
 _loadoutData set ["headgear", [
     "rhs_beanie_green",

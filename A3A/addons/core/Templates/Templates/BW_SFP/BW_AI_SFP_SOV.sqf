@@ -204,7 +204,6 @@ _loadoutData set ["items_unarmed_extras", []];
 
 _loadoutData set ["glasses", [
     "G_Aviator",
-    "G_Balaclava_oli",
     "G_Bandanna_oli",
     "rhs_scarf",
     "rhs_balaclava1_olive",

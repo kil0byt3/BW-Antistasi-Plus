@@ -84,7 +84,7 @@ _loadoutData set ["signalsmokeGrenades", ["rhs_mag_nspd"]];
 
 _loadoutData set ["facewear", [
 ]];
-_loadoutData set ["fullmask", [	"rhs_balaclava", "G_Balaclava_blk", "rhs_balaclava1_olive", "G_Balaclava_oli", "rhssaf_veil_Green"]];
+_loadoutData set ["fullmask", [	"rhs_balaclava", "G_Balaclava_blk", "rhs_balaclava1_olive", "rhssaf_veil_Green"]];
 
 _loadoutData set ["headgear", [
 ]];
