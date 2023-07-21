@@ -19,9 +19,9 @@
 
 ["vehiclesBasic", ["sfp_81_tgb11"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["sfp_81_tgb1112", "sfp_81_tgb20", "sfp_81_tgb11", "sfp_tgb16"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["sfp_81_tgb13_ksp58", "sfp_81_tgb1111", "sfp_tgb16_ksp58", "rhsusf_m1151_m240_v1_usarmy_wd", "rhsusf_m1165a1_gmv_m2_m240_socom_d"]] call _fnc_saveToTemplate;
-["vehiclesTrucks", ["sfp_81_tgb20", "rhsusf_M1078A1P2_B_M2_WD_fmtv_usarmy", "rhsusf_M1083A1P2_B_WD_fmtv_usarmy"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", ["rhsusf_M1078A1P2_B_WD_flatbed_fmtv_usarmy", "rhsusf_M977A4_BKIT_usarmy_wd"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["sfp_81_tgb13_ksp58", "fp_tgb1111_sog_ksp58", "sfp_81_tgb1111", "sfp_tgb16_ksp58", "rhsusf_m1151_m240_v1_usarmy_wd", "rhsusf_m1165a1_gmv_m2_m240_socom_d"]] call _fnc_saveToTemplate;
+["vehiclesTrucks", ["rhsgref_cdf_b_zil131_flatbed", "rhsusf_M1078A1P2_B_M2_WD_fmtv_usarmy", "rhsusf_M1083A1P2_B_WD_fmtv_usarmy"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["rhsusf_M1078A1P2_B_WD_flatbed_fmtv_usarmy", "rhsusf_M1084A1P2_B_M2_WD_fmtv_usarmy", "rhsusf_M1084A1P2_WD_fmtv_usarmy", "rhsusf_M977A4_BKIT_usarmy_wd"]] call _fnc_saveToTemplate;
 ["vehiclesAmmoTrucks", ["rhsusf_M977A4_AMMO_BKIT_usarmy_wd", "B_T_Truck_01_ammo_F"]] call _fnc_saveToTemplate;
 ["vehiclesRepairTrucks", ["rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd", "rhsusf_M977A4_REPAIR_usarmy_wd"]] call _fnc_saveToTemplate;
 ["vehiclesFuelTrucks", ["rhsusf_M978A4_BKIT_usarmy_wd", "rhsusf_M978A4_usarmy_wd"]] call _fnc_saveToTemplate;
@@ -29,7 +29,7 @@
 ["vehiclesLightAPCs", ["sfp_81_pbv302", "sfp_pbv302", "rhsgref_hidf_m113a3_m2", "b_afougf_m113_unarmed"]] call _fnc_saveToTemplate;
 ["vehiclesAirborne", []] call _fnc_saveToTemplate;
 ["vehiclesAPCs", ["sfp_strf90c", "rhsusf_stryker_m1126_m2_wd", "rhsusf_stryker_m1132_m2_wd"]] call _fnc_saveToTemplate;
-["vehiclesIFVs", ["sfp_81_ikv91"]] call _fnc_saveToTemplate;
+["vehiclesIFVs", ["sfp_81_ikv91", "sfp_strf90c"]] call _fnc_saveToTemplate;
 
 ["vehiclesLightTanks",  ["sfp_81_ikv91", "sfp_81_strv102", "I_LT_01_cannon_F"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["sfp_strv103c", "sfp_strv103b", "rhsusf_m1a1hc_wd", "rhsgref_cdf_b_t72bb_tv", "rhsgref_cdf_b_t80u_tv"]] call _fnc_saveToTemplate;
@@ -37,14 +37,14 @@
 
 ["vehiclesTransportBoats", ["sfp_gruppbat"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["sfp_rbb_norrkoping"]] call _fnc_saveToTemplate;
-
+["vehiclesAmphibious", ["sfp_pbv302_mounted", "sfp_pbv302"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesCAS", ["RHS_A10", "sfp_jas39_bk90", "sfp_jas39"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["sfp_jas39_cap"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["sfp_tp84_2015"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisTransport", ["sfp_hkp4", "RHS_UH60M", "rhsgref_cdf_reg_Mi17Sh"]] call _fnc_saveToTemplate;
 ["vehiclesHelisLight", ["sfp_hkp9_sog", "sfp_hkp6", "RHS_MELB_MH6M", "I_E_Heli_light_03_unarmed_F"]] call _fnc_saveToTemplate;
-["vehiclesHelisLightAttack", ["sfp_hkp9_rb55", "RHS_MELB_AH6M", "RHS_UH1Y"]] call _fnc_saveToTemplate;
+["vehiclesHelisLightAttack", ["sfp_hkp9_rb55", "RHS_MELB_AH6M", "RHS_MELB_AH6M_H", "RHS_UH1Y"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["RHS_AH64D_wd", "RHS_AH1Z_wd", "B_Heli_Attack_01_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 
 
@@ -59,7 +59,7 @@
 ["uavsPortable", ["sfp_uav01"]] call _fnc_saveToTemplate;
 //Config special vehicles - militia vehicles are mostly used in the early game, police cars are being used by troops around cities -- Example:
 ["vehiclesMilitiaLightArmed", ["sfp_tgb16_ksp58", "rhsusf_m1151_m240_v1_usarmy_wd"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["sfp_tgb20"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["sfp_tgb20", "sfp_tgb13_ksp58"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["sfp_tgb11", "rhsusf_m998_w_s_2dr_fulltop"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaAPCs", ["sfp_pbv302_mounted", "rhsusf_m113_usarmy_M240"]] call _fnc_saveToTemplate;
 
@@ -78,7 +78,7 @@
 
 ["mortarMagazineHE", "rhs_12Rnd_m821_HE"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
-
+["mortarMagazineFlare", "8Rnd_82mm_Mo_Flare_white"] call _fnc_saveToTemplate;
 
 ["minefieldAT", ["rhsusf_mine_M19"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["rhsusf_mine_m14"]] call _fnc_saveToTemplate;
@@ -104,7 +104,7 @@
 "WhiteHead_21","WhiteHead_23", "WhiteHead_24", "WhiteHead_25",
 "WhiteHead_26", "WhiteHead_27", "WhiteHead_28", "WhiteHead_29", "WhiteHead_30", "WhiteHead_31", "WhiteHead_32"
 ]] call _fnc_saveToTemplate;
-
+["sfFaces", ["sfp_face01_camo","sfp_face02_camo"]] call _fnc_saveToTemplate;
 //////////////////////////
 //       Loadouts       //
 //////////////////////////
