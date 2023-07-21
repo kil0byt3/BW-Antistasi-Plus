@@ -20,7 +20,7 @@
 ["vehiclesBasic", ["sfp_81_tgb11"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["sfp_81_tgb1112", "sfp_81_tgb20", "sfp_81_tgb11", "sfp_tgb16"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", ["sfp_81_tgb13_ksp58", "fp_tgb1111_sog_ksp58", "sfp_81_tgb1111", "sfp_tgb16_ksp58", "rhsusf_m1151_m240_v1_usarmy_wd", "rhsusf_m1165a1_gmv_m2_m240_socom_d"]] call _fnc_saveToTemplate;
-["vehiclesTrucks", ["rhsgref_cdf_b_zil131_flatbed", "rhsusf_M1078A1P2_B_M2_WD_fmtv_usarmy", "rhsusf_M1083A1P2_B_WD_fmtv_usarmy"]] call _fnc_saveToTemplate;
+["vehiclesTrucks", ["rhsusf_M1078A1P2_B_M2_WD_fmtv_usarmy", "rhsusf_M1083A1P2_B_WD_fmtv_usarmy"]] call _fnc_saveToTemplate;
 ["vehiclesCargoTrucks", ["rhsusf_M1078A1P2_B_WD_flatbed_fmtv_usarmy", "rhsusf_M1084A1P2_B_M2_WD_fmtv_usarmy", "rhsusf_M1084A1P2_WD_fmtv_usarmy", "rhsusf_M977A4_BKIT_usarmy_wd"]] call _fnc_saveToTemplate;
 ["vehiclesAmmoTrucks", ["rhsusf_M977A4_AMMO_BKIT_usarmy_wd", "B_T_Truck_01_ammo_F"]] call _fnc_saveToTemplate;
 ["vehiclesRepairTrucks", ["rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd", "rhsusf_M977A4_REPAIR_usarmy_wd"]] call _fnc_saveToTemplate;
@@ -59,8 +59,8 @@
 ["uavsPortable", ["sfp_uav01"]] call _fnc_saveToTemplate;
 //Config special vehicles - militia vehicles are mostly used in the early game, police cars are being used by troops around cities -- Example:
 ["vehiclesMilitiaLightArmed", ["sfp_tgb16_ksp58", "rhsusf_m1151_m240_v1_usarmy_wd"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["sfp_tgb20", "sfp_tgb13_ksp58"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["sfp_tgb11", "rhsusf_m998_w_s_2dr_fulltop"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["rhsgref_cdf_b_zil131_flatbed", "rhsusf_M1078A1P2_B_WD_flatbed_fmtv_usarmy"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["sfp_tgb20", "sfp_tgb11", "rhsusf_m998_w_s_2dr_fulltop"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaAPCs", ["sfp_pbv302_mounted", "rhsusf_m113_usarmy_M240"]] call _fnc_saveToTemplate;
 
 ["vehiclesPolice", ["sfp_tgb1317"]] call _fnc_saveToTemplate;
