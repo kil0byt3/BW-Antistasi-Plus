@@ -11,9 +11,9 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["flagMarkerType", "flag_EAF"] call _fnc_saveToTemplate;
 
 ["vehicleBasic", "b_afougf_quadbike_01"] call _fnc_saveToTemplate;
-["vehicleLightUnarmed", "b_afougf_offroad_armored_01"] call _fnc_saveToTemplate;
+["vehicleLightUnarmed", "C_Offroad_01_F"] call _fnc_saveToTemplate;
 ["vehicleLightArmed", "b_afougf_m1151_m2_v1"] call _fnc_saveToTemplate;
-["vehicleTruck", "b_afougf_Ural_open"] call _fnc_saveToTemplate;
+["vehicleTruck", "RHS_Ural_Open_Civ_03"] call _fnc_saveToTemplate;
 ["vehicleAT", "b_afougf_offroad_armored_at"] call _fnc_saveToTemplate;
 ["vehicleAA", "b_afougf_gaz66_zu23"] call _fnc_saveToTemplate;
 
@@ -23,10 +23,10 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["vehiclePlane", "b_afougf_an2"] call _fnc_saveToTemplate;
 ["vehiclePayloadPlane", "sfp_saab340"] call _fnc_saveToTemplate;
 
-["vehicleCivCar", "C_Offroad_01_F"] call _fnc_saveToTemplate;
-["vehicleCivTruck", "RHS_Ural_Open_Civ_03"] call _fnc_saveToTemplate;
+["vehicleCivCar", "b_afougf_offroad_armored_01"] call _fnc_saveToTemplate;
+["vehicleCivTruck", "b_afougf_kraz255b1_flatbed"] call _fnc_saveToTemplate;
 ["vehicleCivHeli", "rhs_uh1h_idap"] call _fnc_saveToTemplate;
-["vehicleCivBoat", "b_afougf_kraz255b1_flatbed"] call _fnc_saveToTemplate;
+["vehicleCivBoat", "C_Offroad_02_unarmed_F"] call _fnc_saveToTemplate;
 ["vehicleCivBoxSupply", "C_Van_01_box_F"] call _fnc_saveToTemplate;
 
 ["staticMG", "FA_UAF_M2_High"] call _fnc_saveToTemplate;
@@ -130,11 +130,9 @@ private _initialRebelEquipment = [
     "rhs_weap_kar98k", "rhsgref_5Rnd_792x57_kar98k",
     "rhs_grenade_nbhgr39B_mag", "rhs_grenade_sthgr24_mag", "rhsgref_mag_rkg3em",
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
-    "bp_afougf_assault_green", "TCGM_BikePack_oli", "ace_gunbag_Tan", "FA_UAF_Uniform_GreenMM14", "rhs_uniform_gorka_r_g_gloves", "rhs_Booniehat_m81", "sfp_headset", "rhs_balaclava", "sfp_armband_medic", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh_gogg_grn", "rhsusf_shemagh2_grn", "rhsusf_shemagh_grn", "rhsusf_oakley_goggles_blk", 
-    "Binocular", "ItemAndroid", "ACE_DeadManSwitch", "murshun_cigs_cigpack", "murshun_cigs_lighter", "immersion_pops_poppack", "JCA_HF_HandFlare_Green", "JCA_HF_HandFlare_Red", "murshun_cigs_matches", "immersion_cigs_cigar0_nv", "ItemcTabHCam", "ace_marker_flags_red",
-    "rhs_weap_rsp30_white","rhs_mag_rsp30_white",
-    "rhs_weap_rsp30_green","rhs_mag_rsp30_green",
-    "rhs_weap_rsp30_red", "rhs_mag_rsp30_red",
+    "bp_afougf_assault_green", "bp_civilian_tba", "TCGM_BikePack_oli", "ace_gunbag_Tan", "FA_UAF_Uniform_GreenMM14", "rhs_uniform_gorka_r_g_gloves", "rhs_Booniehat_m81", "sfp_headset", "rhs_balaclava", "sfp_armband_medic", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh_gogg_grn", "rhsusf_shemagh2_grn", "rhsusf_shemagh_grn", "rhsusf_oakley_goggles_blk", 
+    "Binocular", "ItemAndroid", "ACE_DeadManSwitch", "murshun_cigs_cigpack", "murshun_cigs_lighter", "immersion_pops_poppack", "JCA_HF_HandFlare_Green", "JCA_HF_HandFlare_Red", "murshun_cigs_matches", "immersion_cigs_cigar0_nv", "ItemcTabHCam", "ace_marker_flags_red", "ToolKit",
+    "rhs_weap_rsp30_white", "rhs_mag_rsp30_white", "MS_Strobe_Mag_1", "rhs_weap_rsp30_green", "rhs_mag_rsp30_green", "rhs_weap_rsp30_red", "rhs_mag_rsp30_red",
     "rhs_mag_nspd", "rhs_mag_nspn_yellow", "rhs_mag_nspn_green", "rhs_mag_nspn_red",
     "rhsgref_chicom","V_BandollierB_oli"
 ];
@@ -151,7 +149,7 @@ if (_hasLawsOfWar) then {
         "B_LegStrapBag_olive_F"
     ];
 } else {
-    _civilianBackpacks append ["B_FieldPack_blk","B_AssaultPack_blk","bp_civilian_tba"];
+    _civilianBackpacks append ["B_FieldPack_blk", "B_AssaultPack_blk", "bp_afougf_assault_green", "bp_civilian_tba"];
 };
 
 ["civilianBackpacks", _civilianBackpacks createHashMapFromArray []] call _fnc_saveToTemplate;
