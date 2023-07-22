@@ -130,11 +130,12 @@ private _initialRebelEquipment = [
     "rhs_weap_kar98k", "rhsgref_5Rnd_792x57_kar98k",
     "rhs_grenade_nbhgr39B_mag", "rhs_grenade_sthgr24_mag", "rhsgref_mag_rkg3em",
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3], ["AMP_Breaching_Charge_Mag", 10],
-    "bp_afougf_assault_green", "bp_ngu_eagle_green_eng", "bp_civilian_tba", "TCGM_BikePack_oli", "ace_gunbag_Tan", "FA_UAF_Uniform_GreenMM14", "rhs_uniform_gorka_r_g_gloves", "rhs_Booniehat_m81", "sfp_headset", "rhs_balaclava", "sfp_armband_medic", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh_gogg_grn", "rhsusf_shemagh2_grn", "rhsusf_shemagh_grn", "rhsusf_oakley_goggles_blk", 
+    "bp_afougf_assault_green", "bp_ngu_eagle_green_eng", "bp_civilian_tba", "TCGM_BikePack_oli", "ace_gunbag_Tan", "FA_UAF_Uniform_GreenMM14", "rhs_uniform_gorka_r_g_gloves", 
     "Binocular", "ItemAndroid", "ACE_DeadManSwitch", "murshun_cigs_cigpack", "murshun_cigs_lighter", "immersion_pops_poppack", "JCA_HF_HandFlare_Green", "JCA_HF_HandFlare_Red", "murshun_cigs_matches", "immersion_cigs_cigar0_nv", "ItemcTabHCam", "ace_marker_flags_red", "ToolKit", "WBK_HeadLampItem", "Nikon_DSLR_HUD", "Hate_Smartphone_HUD",
     "rhs_weap_rsp30_white", "rhs_mag_rsp30_white", "MS_Strobe_Mag_1", "rhs_weap_rsp30_green", "rhs_mag_rsp30_green", "rhs_weap_rsp30_red", "rhs_mag_rsp30_red",
     "rhs_mag_nspd", "rhs_mag_nspn_yellow", "rhs_mag_nspn_green", "rhs_mag_nspn_red",
-    "rhsgref_chicom","V_BandollierB_oli"
+    "rhsgref_chicom","V_BandollierB_oli", "V_TacChestrig_grn_F", "V_Pocketed_olive_F",
+    "G_Aviator","rhsusf_shemagh_grn","rhsusf_shemagh2_grn","rhsusf_shemagh_tan","rhsusf_shemagh2_tan","rhsusf_shemagh_gogg_grn","rhsusf_shemagh2_gogg_grn","rhsusf_shemagh_gogg_tan","rhsusf_shemagh2_gogg_tan", "rhs_Booniehat_m81", "sfp_headset", "rhs_balaclava", "sfp_armband_medic", "rhsusf_oakley_goggles_blk", "sfp_wool_beanie_green", "H_Bandanna_khk", "sfp_peltor2", "H_Cap_oli", "H_Cap_headphones", "rhs_headband", "H_ParadeDressCap_01_LDF_F", "G_Balaclava_TI_tna_F", "H_StrawHat"
 ];
 
 private _civilianBackpacks =  [];

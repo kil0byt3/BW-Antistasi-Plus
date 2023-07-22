@@ -83,7 +83,5 @@ private _initialEquipment = FactionGet(reb,"initialRebelEquipment");
 _initialEquipment append lootBasicItem;
 _initialEquipment append (A3A_faction_reb get "uniforms");
 _initialEquipment append (A3A_faction_civ get "uniforms");
-_initialEquipment append allCosmeticHeadgear;
-_initialEquipment append allCosmeticGlasses;
 _initialEquipment append FactionGet(reb,"uniforms");
 _initialEquipment append FactionGet(reb,"headgear");
