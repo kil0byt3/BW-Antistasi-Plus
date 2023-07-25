@@ -28,6 +28,10 @@ switch (true) do {
         Info("Initializing RHS trader.");
         [_traderX, "rhs"] call HALs_store_fnc_addTrader;
     };
+    case ("BW" isEqualTo (_templateParts select 0)): {
+        Info("Initializing BWRHS trader.");
+        [_traderX, "rhs"] call HALs_store_fnc_addTrader;
+    };
     case ("3CBF" isEqualTo (_templateParts select 0)): {
         Info("Initializing 3CBF trader.");
         [_traderX, "3cbf"] call HALs_store_fnc_addTrader;

@@ -3071,7 +3071,6 @@ class cfgHALsStore
 			ITEM(rhsusf_bino_leopold_mk4, 100, NN_STOCK);
 			ITEM(rhsusf_bino_m24, 100, NN_STOCK);
 			ITEM(rhsusf_bino_m24_ARD, 200, NN_STOCK);
-			ITEM(rhssaf_zrak_rd7j, 100, NN_STOCK);
 
 			ITEM(rhsusf_bino_lerca_1200_tan, 350, NN_STOCK);
 			ITEM(rhsusf_bino_lerca_1200_black, 350, NN_STOCK);
@@ -3698,9 +3697,6 @@ class cfgHALsStore
 			ITEM(rhsusf_mag_15Rnd_9x19_JHP, 45, MAGAZINE_STOCK);
 			ITEM(rhsusf_mag_15Rnd_9x19_FMJ, 60, MAGAZINE_STOCK);
 
-			ITEM(rhssaf_mag_15Rnd_9x19_JHP, 45, MAGAZINE_STOCK);
-			ITEM(rhssaf_mag_15Rnd_9x19_FMJ, 60, MAGAZINE_STOCK);
-
 			ITEM(rhs_20rnd_9x39mm_SP5, 100, MAGAZINE_STOCK);
 			ITEM(rhs_20rnd_9x39mm_SP6, 125, MAGAZINE_STOCK);
 			ITEM(rhs_10rnd_9x39mm_SP5, 65, MAGAZINE_STOCK);
@@ -3725,19 +3721,6 @@ class cfgHALsStore
 			};
 			class rhsgref_8Rnd_762x63_M2B_M1rifle {
 				price = 65;
-				stock = MAGAZINE_STOCK;
-			};
-
-			class rhssaf_30Rnd_762x39mm_M67 {
-				price = 125;
-				stock = MAGAZINE_STOCK;
-			};
-			class rhssaf_30Rnd_762x39mm_M78_tracer {
-				price = 135;
-				stock = MAGAZINE_STOCK;
-			};
-			class rhssaf_30Rnd_762x39_M82_api {
-				price = 155;
 				stock = MAGAZINE_STOCK;
 			};
 
@@ -4107,34 +4090,6 @@ class cfgHALsStore
 				price = 65;
 				stock = MAGAZINE_STOCK;
 			};
-			class rhssaf_30rnd_556x45_EPR_G36 {
-				price = 65;
-				stock = MAGAZINE_STOCK;
-			};
-			class rhssaf_30rnd_556x45_SOST_G36 {
-				price = 85;
-				stock = MAGAZINE_STOCK;
-			};
-			class rhssaf_30rnd_556x45_SPR_G36 {
-				price = 100;
-				stock = MAGAZINE_STOCK;
-			};
-			class rhssaf_30rnd_556x45_Tracers_G36 {
-				price = 110;
-				stock = MAGAZINE_STOCK;
-			};
-			class rhssaf_30rnd_556x45_MDIM_G36 {
-				price = 125;
-				stock = MAGAZINE_STOCK;
-			};
-			class rhssaf_30rnd_556x45_TDIM_G36 {
-				price = 125;
-				stock = MAGAZINE_STOCK;
-			};
-			class rhssaf_100rnd_556x45_EPR_G36 {
-				price = 300;
-				stock = MAGAZINE_STOCK;
-			};
 			
 
 			///////////////////////////////////////////////////////
@@ -4147,10 +4102,6 @@ class cfgHALsStore
 
 			class rhsgref_10Rnd_792x57_m76 {
 				price = 100;
-				stock = MAGAZINE_STOCK;
-			};
-			class rhssaf_10Rnd_792x57_m76_tracer {
-				price = 115;
 				stock = MAGAZINE_STOCK;
 			};
 
@@ -4436,8 +4387,6 @@ class cfgHALsStore
 			ITEM(rhsgref_hidf_alicepack, 750, MISC_STOCK);
 			ITEM(rhsgref_ttsko_alicepack, 750, MISC_STOCK);
 			ITEM(rhsgref_wdl_alicepack, 750, MISC_STOCK);
-			ITEM(rhssaf_alice_md2camo, 750, MISC_STOCK);
-			ITEM(rhssaf_alice_smb, 750, MISC_STOCK);
 			ITEM(U_I_FullGhillie_lsh, 1000, MISC_STOCK);
 			ITEM(U_I_FullGhillie_ard, 1000, MISC_STOCK);
 			ITEM(U_I_FullGhillie_sard, 1000, MISC_STOCK);
@@ -4452,7 +4401,6 @@ class cfgHALsStore
 			ITEM(rhsusf_mine_m14_mag, 400, MISC_STOCK);
 			ITEM(rhs_mine_M19_mag, 300, MISC_STOCK);
 			ITEM(rhs_mine_M7A2_mag, 200, MISC_STOCK);
-			ITEM(rhssaf_mine_pma3_mag, 300, MISC_STOCK);
 			ITEM(rhs_mag_mine_pfm1, 250, MISC_STOCK);
 			ITEM(rhs_mine_tm62m_mag, 350, MISC_STOCK);		
 
@@ -6044,9 +5992,6 @@ class cfgHALsStore
 			ITEM(rhsusf_mag_15Rnd_9x19_JHP, 45, MAGAZINE_STOCK);
 			ITEM(rhsusf_mag_15Rnd_9x19_FMJ, 60, MAGAZINE_STOCK);
 
-			ITEM(rhssaf_mag_15Rnd_9x19_JHP, 45, MAGAZINE_STOCK);
-			ITEM(rhssaf_mag_15Rnd_9x19_FMJ, 60, MAGAZINE_STOCK);
-
 			ITEM(rhs_20rnd_9x39mm_SP5, 100, MAGAZINE_STOCK);
 			ITEM(rhs_20rnd_9x39mm_SP6, 125, MAGAZINE_STOCK);
 			ITEM(rhs_10rnd_9x39mm_SP5, 65, MAGAZINE_STOCK);
@@ -6210,20 +6155,6 @@ class cfgHALsStore
 			};
 			class UK3CB_AUG_42Rnd_556x45_Magazine_WT {
 				price = 80;
-				stock = MAGAZINE_STOCK;
-			};
-
-
-			class rhssaf_30Rnd_762x39mm_M67 {
-				price = 125;
-				stock = MAGAZINE_STOCK;
-			};
-			class rhssaf_30Rnd_762x39mm_M78_tracer {
-				price = 135;
-				stock = MAGAZINE_STOCK;
-			};
-			class rhssaf_30Rnd_762x39_M82_api {
-				price = 155;
 				stock = MAGAZINE_STOCK;
 			};
 
@@ -6528,10 +6459,6 @@ class cfgHALsStore
 
 			class rhsgref_10Rnd_792x57_m76 {
 				price = 100;
-				stock = MAGAZINE_STOCK;
-			};
-			class rhssaf_10Rnd_792x57_m76_tracer {
-				price = 115;
 				stock = MAGAZINE_STOCK;
 			};
 
@@ -7120,8 +7047,6 @@ class cfgHALsStore
 			ITEM(rhsgref_hidf_alicepack, 750, MISC_STOCK);
 			ITEM(rhsgref_ttsko_alicepack, 750, MISC_STOCK);
 			ITEM(rhsgref_wdl_alicepack, 750, MISC_STOCK);
-			ITEM(rhssaf_alice_md2camo, 750, MISC_STOCK);
-			ITEM(rhssaf_alice_smb, 750, MISC_STOCK);
 			ITEM(U_I_FullGhillie_lsh, 1000, MISC_STOCK);
 			ITEM(U_I_FullGhillie_ard, 1000, MISC_STOCK);
 			ITEM(U_I_FullGhillie_sard, 1000, MISC_STOCK);
@@ -7133,7 +7058,6 @@ class cfgHALsStore
 			ITEM(rhsusf_mine_m14_mag, 400, MISC_STOCK);
 			ITEM(rhs_mine_M19_mag, 300, MISC_STOCK);
 			ITEM(rhs_mine_M7A2_mag, 200, MISC_STOCK);
-			ITEM(rhssaf_mine_pma3_mag, 300, MISC_STOCK);
 			ITEM(rhs_mag_mine_pfm1, 250, MISC_STOCK);
 			ITEM(rhs_mine_tm62m_mag, 350, MISC_STOCK);		
 
