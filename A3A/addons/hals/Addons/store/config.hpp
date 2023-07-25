@@ -2900,10 +2900,6 @@ class cfgHALsStore
 			ITEM(rhs_weap_m21s_pr, 700, RIFLE_STOCK);
 			ITEM(rhs_weap_m21a_pbg40, 800, RIFLE_STOCK);
 			ITEM(rhs_weap_m21a_pr_pbg40, 850, RIFLE_STOCK);
-	
-			ITEM(rhs_weap_g36c, 800, RIFLE_STOCK);
-			ITEM(rhs_weap_g36kv, 900, RIFLE_STOCK);
-			ITEM(rhs_weap_g36kv_ag36, 1050, RIFLE_STOCK);
 
 			ITEM(rhs_weap_mk18, 1100, RIFLE_STOCK);
 			ITEM(rhs_weap_mk18_bk, 1300, RIFLE_STOCK);
@@ -4633,11 +4629,6 @@ class cfgHALsStore
 			ITEM(uk3cb_auga3_gl_blk, 1450, RIFLE_STOCK);
 			ITEM(uk3cb_auga3_gl_blu, 1450, RIFLE_STOCK);
 			ITEM(uk3cb_auga3_gl, 1450, RIFLE_STOCK);
-
-
-			ITEM(rhs_weap_g36c, 800, RIFLE_STOCK);
-			ITEM(rhs_weap_g36kv, 900, RIFLE_STOCK);
-			ITEM(rhs_weap_g36kv_ag36, 1050, RIFLE_STOCK);
 
 			ITEM(rhs_weap_mk18, 1100, RIFLE_STOCK);
 			ITEM(rhs_weap_mk18_bk, 1300, RIFLE_STOCK);
