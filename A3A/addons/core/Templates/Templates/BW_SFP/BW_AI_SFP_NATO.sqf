@@ -38,8 +38,8 @@
 ["vehiclesTransportBoats", ["sfp_gruppbat"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["sfp_rbb_norrkoping"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", ["sfp_pbv302_mounted", "sfp_pbv302"]] call _fnc_saveToTemplate;
-["vehiclesPlanesCAS", ["RHS_A10", "sfp_jas39_bk90", "sfp_jas39"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["sfp_jas39_cap"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["RHS_A10"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["rhsusf_f22"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["sfp_tp84_2015"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisTransport", ["sfp_hkp4", "RHS_UH60M", "rhsgref_cdf_reg_Mi17Sh"]] call _fnc_saveToTemplate;
@@ -367,7 +367,7 @@ _eliteLoadoutData set ["ATLaunchers", [
 _eliteLoadoutData set ["rifles", [
 ["sfp_ak5c", "", "rhsusf_acc_anpeq15_bk", "sfp_optic_3x_aimpoint", ["sfp_30Rnd_556x45_Stanag_plastic"], [], ""],
 ["sfp_ak5c_alt", "", "rhsusf_acc_anpeq15_bk", "sfp_optic_3x_aimpoint", ["sfp_30Rnd_556x45_Stanag_plastic"], [], ""],
-["sfp_ak5c_blk", "", "rhsusf_acc_anpeq15_bk", "sfp_optic_susat_4x", ["sfp_30Rnd_556x45_Stanag_plastic"], [], ""]
+["sfp_ak5c_blk", "", "rhsusf_acc_anpeq15_bk", "rhsusf_acc_ACOG_RMR_3d", ["sfp_30Rnd_556x45_Stanag_plastic"], [], ""]
 ]];
 _eliteLoadoutData set ["carbines", [
 ["sfp_g36c", "", "rhsusf_acc_anpeq15_bk", "sfp_optic_aimpoint", ["sfp_30Rnd_556x45_Stanag_g36"], [], ""],
@@ -377,8 +377,8 @@ _eliteLoadoutData set ["designatedGrenadeLaunchers", [
 ["rhs_weap_m79", "", "", "", ["rhs_mag_M433_HEDP", "rhs_mag_m713_Red", "rhs_mag_m714_White"], [], ""]
 ]];
 _eliteLoadoutData set ["grenadeLaunchers", [
-["sfp_ak5c_m203_blk", "", "rhsusf_acc_anpeq15_bk", "sfp_optic_susat_4x", ["sfp_30Rnd_556x45_Stanag_plastic"], ["rhs_mag_M441_HE", "rhs_mag_M397_HET", "rhs_mag_M433_HEDP", "rhs_mag_m714_White"], ""],
-["sfp_ak5c_m203", "", "rhsusf_acc_anpeq15_bk", "sfp_optic_susat_4x", ["sfp_30Rnd_556x45_Stanag_plastic"], ["rhs_mag_M441_HE", "rhs_mag_M397_HET", "rhs_mag_M433_HEDP", "rhs_mag_m714_White"], ""]
+["sfp_ak5c_m203_blk", "", "rhsusf_acc_anpeq15_bk", "rhsusf_acc_ACOG_RMR_3d", ["sfp_30Rnd_556x45_Stanag_plastic"], ["rhs_mag_M441_HE", "rhs_mag_M397_HET", "rhs_mag_M433_HEDP", "rhs_mag_m714_White"], ""],
+["sfp_ak5c_m203", "", "rhsusf_acc_anpeq15_bk", "rhsusf_acc_ACOG_RMR_3d", ["sfp_30Rnd_556x45_Stanag_plastic"], ["rhs_mag_M441_HE", "rhs_mag_M397_HET", "rhs_mag_M433_HEDP", "rhs_mag_m714_White"], ""]
 ]];
 _eliteLoadoutData set ["SMGs", [
 ["sfp_cbj_ms", "", "", "sfp_optic_aimpoint", ["sfp_30Rnd_650x25mag"], [], ""],
@@ -432,14 +432,14 @@ _militaryLoadoutData set ["lightATLaunchers", ["rhs_weap_m72a7"]];
 _militaryLoadoutData set ["lightHELaunchers", ["rhs_weap_m72a7"]];
 
 _militaryLoadoutData set ["slRifles", [
-["sfp_ak4_m203", "", "", "", ["sfp_20Rnd_762x51_ak4"], ["rhs_mag_m714_White", "rhs_mag_m715_Green", "rhs_mag_m716_yellow", "rhs_mag_m713_Red", "rhs_mag_M583A1_white", "rhs_mag_M585_white_cluster"], ""],
-["sfp_ak4b_m203", "", "", "sfp_optic_susat_4x", ["sfp_20Rnd_762x51_ak4"], ["rhs_mag_m714_White", "rhs_mag_m715_Green", "rhs_mag_m716_yellow", "rhs_mag_m713_Red", "rhs_mag_M583A1_white", "rhs_mag_M585_white_cluster"], ""]
+["sfp_ak4_m203", "", "", "sfp_optic_3x_aimpoint", ["sfp_20Rnd_762x51_ak4"], ["rhs_mag_m714_White", "rhs_mag_m715_Green", "rhs_mag_m716_yellow", "rhs_mag_m713_Red", "rhs_mag_M583A1_white", "rhs_mag_M585_white_cluster"], ""],
+["sfp_ak4b_m203", "", "", "rhsusf_acc_ACOG_RMR_3d", ["sfp_20Rnd_762x51_ak4"], ["rhs_mag_m714_White", "rhs_mag_m715_Green", "rhs_mag_m716_yellow", "rhs_mag_m713_Red", "rhs_mag_M583A1_white", "rhs_mag_M585_white_cluster"], ""]
 ]];
 _militaryLoadoutData set ["rifles", [
-["sfp_ak4", "", "", "", ["sfp_20Rnd_762x51_ak4", "sfp_riflegrenade_smoke_ak4"], [], ""]
+["sfp_ak4d", "", "", "rhsusf_acc_ACOG_RMR_3d", ["sfp_20Rnd_762x51_ak4"], [], ""]
 ]];
 _militaryLoadoutData set ["carbines", [
-["sfp_ak4", "", "", "", ["sfp_20Rnd_762x51_ak4"], [], ""]
+["sfp_ak4d", "", "", "sfp_optic_aimpoint", ["sfp_20Rnd_762x51_ak4"], [], ""]
 ]];
 _militaryLoadoutData set ["SMGs", [
 ["sfp_kpistm45", "", "", "", ["sfp_36Rnd_9mm_kpistm45"], [], ""],
@@ -449,17 +449,17 @@ _militaryLoadoutData set ["designatedGrenadeLaunchers", [
 ["rhs_weap_m79", "", "", "", ["rhs_mag_M433_HEDP", "rhs_mag_m713_Red", "rhs_mag_m714_White"], [], ""]
 ]];
 _militaryLoadoutData set ["grenadeLaunchers", [
-["sfp_ak4_m203", "", "", "", ["sfp_20Rnd_762x51_ak4"], ["rhs_mag_M441_HE", "rhs_mag_M441_HE", "rhs_mag_M433_HEDP", "rhs_mag_m714_White"], ""]
+["sfp_ak4b_m203", "", "", "rhsusf_acc_ACOG_RMR_3d", ["sfp_20Rnd_762x51_ak4"], ["rhs_mag_M441_HE", "rhs_mag_M441_HE", "rhs_mag_M433_HEDP", "rhs_mag_m714_White"], ""]
 ]];
 _militaryLoadoutData set ["machineGuns", [
 ["sfp_ksp58", "", "", "", ["sfp_100Rnd_762x51_ksp58"], [], ""],
 ["sfp_ksp58B2", "", "", "sfp_optic_3x_aimpoint", ["sfp_100Rnd_762x51_ksp58"], [], ""],
-["sfp_ksp58f", "", "", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""]
+["sfp_ksp58f", "", "", "rhsusf_acc_ACOG_RMR_3d", ["sfp_100Rnd_762x51_ksp58"], [], ""]
 ]];
 _militaryLoadoutData set ["marksmanRifles", [
 ["rhs_weap_m14", "", "", "", ["rhsusf_20Rnd_762x51_m118_special_Mag"], [], ""],
-["rhs_weap_m14_rail", "", "", "sfp_optic_susat_4x", ["rhsusf_20Rnd_762x51_m118_special_Mag"], [], ""],
-["rhs_weap_m14_rail", "", "", "sfp_optic_susat_4x", ["rhsusf_20Rnd_762x51_m118_special_Mag"], [], "rhsusf_acc_harris_bipod"]
+["rhs_weap_m14_rail", "", "", "rhsusf_acc_ACOG_RMR_3d", ["rhsusf_20Rnd_762x51_m118_special_Mag"], [], ""],
+["rhs_weap_m14_rail", "", "", "rhsusf_acc_ACOG_RMR_3d", ["rhsusf_20Rnd_762x51_m118_special_Mag"], [], "rhsusf_acc_harris_bipod"]
 ]];
 _militaryLoadoutData set ["sniperRifles", [
 ["rhs_weap_m24sws", "rhsusf_acc_m24_muzzlehider_black", "", "rhsusf_acc_M8541", ["rhsusf_5Rnd_762x51_m118_special_Mag", "rhsusf_5Rnd_762x51_m118_special_Mag", "rhsusf_5Rnd_762x51_m62_Mag"], [], "rhsusf_acc_harris_swivel"],
