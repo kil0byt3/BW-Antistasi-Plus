@@ -2923,6 +2923,8 @@ class cfgHALsStore
 			ITEM(rhs_weap_hk416d145_wd, 1650, RIFLE_STOCK);
 			ITEM(rhs_weap_hk416d145_wd_2, 1650, RIFLE_STOCK);
 			ITEM(rhs_weap_hk416d145_m320, 1800, RIFLE_STOCK);
+			ITEM(sfp_ak4d, 1500, RIFLE_STOCK);
+			ITEM(sfp_ak5c, 1650, RIFLE_STOCK);
 		};
 
 		class sniperRiflesRhs 
@@ -3211,6 +3213,11 @@ class cfgHALsStore
 			picture = "";
 
 			class rhsgref_acc_l1a1_l2a2 {
+				price = 450;
+				stock = 100;
+			};
+
+			class sfp_optic_hensoldt_4x {
 				price = 450;
 				stock = 100;
 			};
@@ -3717,6 +3724,11 @@ class cfgHALsStore
 			};
 			class rhsgref_8Rnd_762x63_M2B_M1rifle {
 				price = 65;
+				stock = MAGAZINE_STOCK;
+			};
+
+			class sfp_20Rnd_762x51_ak4_ap {
+				price = 250;
 				stock = MAGAZINE_STOCK;
 			};
 
