@@ -10,28 +10,28 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["flagTexture", "\a3\Data_F_Enoch\Flags\flag_EAF_CO.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_EAF"] call _fnc_saveToTemplate;
 
-["vehicleBasic", "b_afougf_quadbike_01"] call _fnc_saveToTemplate;
-["vehicleLightUnarmed", "C_Offroad_01_F"] call _fnc_saveToTemplate;
-["vehicleLightArmed", "b_afougf_m1151_m2_v1"] call _fnc_saveToTemplate;
-["vehicleTruck", "RHS_Ural_Open_Civ_03"] call _fnc_saveToTemplate;
+["vehicleBasic", "b_afousf_lsv_desert01"] call _fnc_saveToTemplate;
+["vehicleLightUnarmed", "b_afougf_yt_offroad_armored_01"] call _fnc_saveToTemplate;
+["vehicleLightArmed", "b_afougf_offroad_armored_01_dshkm"] call _fnc_saveToTemplate;
+["vehicleTruck", "FA_UAF_Zamak"] call _fnc_saveToTemplate;
 ["vehicleAT", "b_afougf_offroad_armored_at"] call _fnc_saveToTemplate;
 ["vehicleAA", "b_afougf_gaz66_zu23"] call _fnc_saveToTemplate;
 
 ["vehicleBoat", "sfp_gruppbat"] call _fnc_saveToTemplate;
-["vehicleRepair", "b_afougf_Ural_repair"] call _fnc_saveToTemplate;
+["vehicleRepair", "FA_UAF_Zamak_Repair"] call _fnc_saveToTemplate;
 
 ["vehiclePlane", "b_afougf_an2"] call _fnc_saveToTemplate;
 ["vehiclePayloadPlane", "sfp_saab340"] call _fnc_saveToTemplate;
 
-["vehicleCivCar", "b_afougf_offroad_armored_01"] call _fnc_saveToTemplate;
-["vehicleCivTruck", "b_afougf_kraz255b1_flatbed"] call _fnc_saveToTemplate;
+["vehicleCivCar", "C_Offroad_01_F"] call _fnc_saveToTemplate;
+["vehicleCivTruck", "B_T_Truck_01_flatbed_F"] call _fnc_saveToTemplate;
 ["vehicleCivHeli", "rhs_uh1h_idap"] call _fnc_saveToTemplate;
 ["vehicleCivBoat", "C_Offroad_02_unarmed_F"] call _fnc_saveToTemplate;
 ["vehicleCivBoxSupply", "C_Van_01_box_F"] call _fnc_saveToTemplate;
 
 ["staticMG", "FA_UAF_M2_High"] call _fnc_saveToTemplate;
-["staticAT", "rhsgref_tla_g_SPG9"] call _fnc_saveToTemplate;
-["staticAA", "rhsgref_tla_g_ZU23"] call _fnc_saveToTemplate;
+["staticAT", "rhsgref_nat_SPG9"] call _fnc_saveToTemplate;
+["staticAA", "rhsgref_nat_ZU23"] call _fnc_saveToTemplate;
 ["staticMortar", "rhsgref_nat_2b14"] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "rhs_mag_3vo18_10"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "rhs_mag_d832du_10"] call _fnc_saveToTemplate;
@@ -83,8 +83,9 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
     ["b_afougf_gaz66_zu23", ["ZSUCAMO10",1]],
     ["b_afougf_btr80_common", ["ZSUCAMO5",1]],
     ["b_afougf_t72bb", ["ZSUCAMO5",1]],
-    ["b_afougf_Ural_repair", ["ZSUCAMO4",1]],
-    ["O_Heli_Transport_04_F", ["NONE",1]]
+    ["O_Heli_Transport_04_F", ["NONE",1]],
+    ["FA_UAF_Zamak", ["OliveUnmarked",1]],
+    ["FA_UAF_Zamak_Repair", ["OliveUnmarked",1]]
 ]] call _fnc_saveToTemplate;
 
 //////////////////////////////////////
@@ -100,24 +101,25 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
     ["FA_UAF_Dozor_Armed", 2500, "CAR", {true}],
 
     ["b_afougf_btr80_common", 6000, "APC", {true}],
-    ["FA_UAF_BTR3", 12000, "APC", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
-    ["FA_UAF_BTR4", 12500, "APC", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["FA_UAF_BTR3", 10000, "APC", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["FA_UAF_BTR4", 10500, "APC", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
 
-    ["b_afougf_t72bb", 20000, "TANK", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
-    ["FA_UAF_T84M", 21000, "TANK", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["b_afougf_t72bb", 18000, "TANK", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["FA_UAF_T84M", 19000, "TANK", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
     
-    ["b_afougf_ZU23", 10000, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["b_afougf_zsu234_aa", 12000, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["b_afougf_Stinger_AA_pod", 5000, "AA", {tierWar > 5}],
 
     ["b_afougf_l39m1", 40000, "PLANE", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
 
-    ["b_afougf_Mi8MTV3_Evac", 15000, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
-    ["b_afougf_Mi24V_AT", 25000, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
-    ["O_Heli_Transport_04_F", 10000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
-    ["Land_Pod_Heli_Transport_04_bench_F", 2000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
-    ["Land_Pod_Heli_Transport_04_covered_F", 4000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
-    ["Land_Pod_Heli_Transport_04_ammo_F", 5000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
-    ["Land_Pod_Heli_Transport_04_repair_F", 5000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
-    ["Land_Pod_Heli_Transport_04_fuel_F", 5000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}]
+    ["b_afougf_Mi8MTV3_Evac", 13000, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
+    ["b_afougf_Mi24V_AT", 22000, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
+    ["O_Heli_Transport_04_F", 8000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
+    ["Land_Pod_Heli_Transport_04_bench_F", 1000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
+    ["Land_Pod_Heli_Transport_04_covered_F", 2000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
+    ["Land_Pod_Heli_Transport_04_ammo_F", 3000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
+    ["Land_Pod_Heli_Transport_04_repair_F", 3000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
+    ["Land_Pod_Heli_Transport_04_fuel_F", 3000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}]
 ]] call _fnc_saveToTemplate;
 
 ///////////////////////////
