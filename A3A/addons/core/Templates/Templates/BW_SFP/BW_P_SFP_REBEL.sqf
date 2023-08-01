@@ -11,10 +11,10 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["flagMarkerType", "flag_EAF"] call _fnc_saveToTemplate;
 
 ["vehicleBasic", "b_afousf_lsv_desert01"] call _fnc_saveToTemplate;
-["vehicleLightUnarmed", "b_afougf_yt_offroad_armored_01"] call _fnc_saveToTemplate;
-["vehicleLightArmed", "b_afougf_offroad_armored_01_dshkm"] call _fnc_saveToTemplate;
+["vehicleLightUnarmed", "I_E_Offroad_01_covered_F"] call _fnc_saveToTemplate;
+["vehicleLightArmed", "rhsgref_tla_g_offroad_armed"] call _fnc_saveToTemplate;
 ["vehicleTruck", "FA_UAF_Zamak"] call _fnc_saveToTemplate;
-["vehicleAT", "b_afougf_offroad_armored_at"] call _fnc_saveToTemplate;
+["vehicleAT", "rhsgref_tla_g_offroad_at"] call _fnc_saveToTemplate;
 ["vehicleAA", "b_afougf_gaz66_zu23"] call _fnc_saveToTemplate;
 
 ["vehicleBoat", "sfp_gruppbat"] call _fnc_saveToTemplate;
@@ -77,9 +77,10 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["breachingExplosivesTank", [["rhs_ec75_mag", 4], ["rhs_ec75_sand_mag", 4], ["rhs_ec200_mag", 2], ["rhs_ec200_sand_mag", 2], ["rhs_ec400_mag", 1], ["rhs_ec400_sand_mag", 1],["DemoCharge_Remote_Mag", 2], ["rhsusf_m112_mag", 2], ["rhsusf_m112x4_mag", 1], ["rhs_charge_M2tet_x2_mag", 1], ["SatchelCharge_Remote_Mag", 1]]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["b_afougf_offroad_armored_01", ["OFFROAD_CAMO10",1]],
+    ["I_E_Offroad_01_covered_F", ["Green",1]],
     ["b_afougf_Ural_open", ["ZSUCAMO4",1]],
-    ["b_afougf_offroad_armored_at", ["OFFROAD_CAMO8",1]],
+    ["rhsgref_tla_g_offroad_at", ["Green",1]],
+    ["rhsgref_tla_g_offroad_armed", ["Green",1]],
     ["b_afougf_gaz66_zu23", ["ZSUCAMO10",1]],
     ["b_afougf_btr80_common", ["ZSUCAMO5",1]],
     ["b_afougf_t72bb", ["ZSUCAMO5",1]],
@@ -118,8 +119,7 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
     ["Land_Pod_Heli_Transport_04_bench_F", 1000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
     ["Land_Pod_Heli_Transport_04_covered_F", 2000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
     ["Land_Pod_Heli_Transport_04_ammo_F", 3000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
-    ["Land_Pod_Heli_Transport_04_repair_F", 3000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
-    ["Land_Pod_Heli_Transport_04_fuel_F", 3000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}]
+    ["Land_Pod_Heli_Transport_04_repair_F", 3000, "HELI", {tierWar > 4 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}]
 ]] call _fnc_saveToTemplate;
 
 ///////////////////////////

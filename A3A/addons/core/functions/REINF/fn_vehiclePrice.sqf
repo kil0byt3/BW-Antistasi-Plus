@@ -16,7 +16,7 @@ _costs = if (isNil "_costs") then {
 		{sidesX getVariable [_x,sideUnknown] == teamPlayer} count resourcesX;
 	};
 
-	round (_costs - (_costs * (0.1 * _multiplier)))
+	round (_costs - (_costs * (0.01 * _multiplier)))
 };
 
 
