@@ -22,7 +22,7 @@ private _taskId = "outpostTask" + str A3A_taskCount;
 [_taskId, "outpostTask", "CREATED"] remoteExecCall ["A3A_fnc_taskUpdate", 2];
 
 private _typeGroup = A3A_faction_reb get "groupSniper";
-private _typeVehX = A3A_faction_reb get "vehicleBasic";
+private _typeVehX = (A3A_faction_reb get "vehiclesBasic") select 0;
 
 _groupX = [getMarkerPos respawnTeamPlayer, teamPlayer, _typeGroup] call A3A_fnc_spawnGroup;
 _groupX setGroupId ["Watch"];
@@ -43,7 +43,7 @@ waitUntil {
 	sleep 1;
 	(!isNil "cancelEstabTask" && {cancelEstabTask}) || 
 	{_units findIf {[_x] call A3A_fnc_canFight} == -1 || 
-	{{alive _x && {_x distance _position < 10}} count units _groupX > 0 ||
+	{{alive _x && {_x distance _position < 35}} count units _groupX > 0 ||
 	{(dateToNumber date > _dateLimitNum)}}}
 };
 
@@ -54,27 +54,29 @@ switch (true) do {
 		sleep 3;
 		deleteMarker _marker;
 	};
-	case (_units findIf {[_x] call A3A_fnc_canFight && {_x distance _position < 10}} != -1): {
+	case (_units findIf {[_x] call A3A_fnc_canFight && {_x distance _position < 35}} != -1): {
 		if (isPlayer leader _groupX) then {
 			_owner = (leader _groupX) getVariable ["owner",leader _groupX];
 			(leader _groupX) remoteExec ["removeAllActions",leader _groupX];
 			_owner remoteExec ["selectPlayer",leader _groupX];
-			(leader _groupX) setVariable ["owner",_owner,true];
-			{[_x] joinsilent group _owner} forEach units group _owner;
-			[group _owner, _owner] remoteExec ["selectLeader", _owner];
+			// (leader _groupX) setVariable ["owner",_owner,true];
+			// {[_x] joinsilent group _owner} forEach units group _owner;
+			// [group _owner, _owner] remoteExec ["selectLeader", _owner];
 			"" remoteExec ["hint",_owner];
 			waitUntil {!(isPlayer leader _groupX)};
+			sleep 5;
 		};
-		watchpostsFIA = watchpostsFIA + [_marker]; publicVariable "watchpostsFIA";
+		watchpostsFIA pushBack _marker; 
+		publicVariable "watchpostsFIA";
 		sidesX setVariable [_marker,teamPlayer,true];
-		markersX = markersX + [_marker];
+		markersX pushBack _marker;
 		publicVariable "markersX";
 		spawner setVariable [_marker,2,true];
-		[_taskId, "outpostTask", "SUCCEEDED"] call A3A_fnc_taskSetState;
 		_nul = [-5,5,_position] remoteExec ["A3A_fnc_citySupportChange",2];
 		_marker setMarkerType "n_recon";
 		_marker setMarkerColor colorTeamPlayer;
 		_marker setMarkerText _textX;
+		[_taskId, "outpostTask", "SUCCEEDED"] call A3A_fnc_taskSetState;
 		["RebelControlCreated", [_marker, "watchpost"]] call EFUNC(Events,triggerEvent);
 	};
 	default {

@@ -31,7 +31,7 @@ if !(_cured getVariable ["incapacitated",false]) exitWith
 
 private _medkits = ["Medikit"] + (A3A_faction_reb get "mediKits");    // Medikit is kept in case a unit still got hold of it.
 private _firstAidKits = ["FirstAidKit"] + (A3A_faction_reb get "firstAidKits");    // FirstAidKit is kept in case a unit still got hold of it.
-private _hasMedkit = (count (_medkits arrayIntersect items _medic) > 0);
+private _hasMedkit = (count (_medkits arrayIntersect (items _medic + items _cured)) > 0);
 private _medicFAKs = if (!_hasMedkit) then { _firstAidKits arrayIntersect items _medic };
 private _curedFAKs = if (!_hasMedkit) then { _firstAidKits arrayIntersect items _cured };
 
@@ -41,24 +41,7 @@ if (!_hasMedkit && {count _medicFAKs == 0 && count _curedFAKs == 0}) exitWith
     if (_inPlayerGroup) then {_medic groupChat localize "STR_chats_action_revive_no_fak_me"};
     false
 };
-
-private _hasMedicalVeh = ((nearestObjects [_medic, A3A_faction_all get "vehiclesMedical", 25]) select {
-    [getPosATL _x, 25] call A3A_fnc_enemyNearCheck && {(side _x == side _medic || side _x == sideUnknown)}
-}) isNotEqualTo [];
-private _timer = switch (true) do {
-    case (_isMedic && {_hasMedicalVeh}): {
-        time + 8
-    };
-    case (_isMedic): {
-        time + 12
-    };
-    case (_hasMedicalVeh): {
-        time + 16
-    };
-    default {
-        time + 24
-    };
-};
+private _timer = if (_isMedic) then { A3A_reviveTime / 2 } else { time + A3A_reviveTime };
 
 _medic setVariable ["helping", true];
 _medic playMoveNow selectRandom medicAnims;
@@ -183,9 +166,5 @@ if ((_sideX != side (group _medic)) and ((_sideX == Occupants) or (_sideX == Inv
     sleep 2;
 };
 _cured setVariable ["incapacitated",false,true];        // why is this applied later? check
-
-if (_isMedic && {_hasMedicalVeh}) then {
-    _cured setDamage 0;
-};
 
 true;

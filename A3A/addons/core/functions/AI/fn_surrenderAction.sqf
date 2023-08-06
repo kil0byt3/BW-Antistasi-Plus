@@ -13,7 +13,7 @@ _unit setVariable ["surrendered", true, true];
 if (typeOf _unit == "Fin_random_F") exitWith {};		// dogs do not surrender?
 
 if (!alive _unit) exitWith {};							// Used to happen with ACE, seems to be fixed
-if (lifeState _unit isEqualTo "INCAPACITATED") exitWith {
+if (lifeState _unit == "INCAPACITATED") exitWith {
     Info("Unit attempted to surrender while incapacitated"); // If not rare, probably a sync bug
 	_unit setVariable ["surrendered", false, true];
 };
